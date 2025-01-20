@@ -1,0 +1,422 @@
+[
+    {
+        "question": "Which Kubernetes object is used to ensure a specified number of pod replicas are running?",
+        "options": [
+            "Deployment",
+            "StatefulSet",
+            "DaemonSet",
+            "ReplicaSet"
+        ],
+        "correct_option_id": 3,
+        "explanation": "A ReplicaSet ensures that a specified number of pod replicas are running at all times."
+    },
+    {
+        "question": "In CI/CD pipelines, what is the primary purpose of a staging environment?",
+        "options": [
+            "To build the application",
+            "To deploy production changes",
+            "To simulate production for testing",
+            "To store artifacts"
+        ],
+        "correct_option_id": 2,
+        "explanation": "A staging environment is used to simulate the production environment for testing purposes before deploying to production."
+    },
+    {
+        "question": "What is the role of an Ingress in Kubernetes?",
+        "options": [
+            "To manage internal pod communication",
+            "To expose services to the internet",
+            "To monitor cluster metrics",
+            "To provide persistent storage for pods"
+        ],
+        "correct_option_id": 1,
+        "explanation": "An Ingress manages external access to services, typically HTTP, by providing routing rules."
+    },
+    {
+        "question": "Which tool is most commonly used for container orchestration?",
+        "options": [
+            "Docker",
+            "Kubernetes",
+            "Terraform",
+            "Ansible"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Kubernetes is the most widely used tool for container orchestration, managing containerized applications across clusters."
+    },
+    {
+        "question": "In Git, what does the command `git cherry-pick` do?",
+        "options": [
+            "Reverts a specific commit",
+            "Combines multiple branches",
+            "Applies changes from a specific commit to another branch",
+            "Lists commits with conflicts"
+        ],
+        "correct_option_id": 2,
+        "explanation": "The `git cherry-pick` command applies the changes from a specific commit to the current branch."
+    },
+    {
+        "question": "What does the `terraform plan` command do?",
+        "options": [
+            "Applies infrastructure changes",
+            "Generates and shows the execution plan for changes",
+            "Destroys infrastructure resources",
+            "Installs Terraform providers"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`terraform plan` generates and shows the execution plan, allowing users to preview changes before applying them."
+    },
+    {
+        "question": "What is the main purpose of a service mesh in a microservices architecture?",
+        "options": [
+            "To build microservices",
+            "To deploy containers",
+            "To manage service-to-service communication",
+            "To create network policies"
+        ],
+        "correct_option_id": 2,
+        "explanation": "A service mesh manages service-to-service communication, including traffic control, observability, and security."
+    },
+    {
+        "question": "In Jenkins, what is a 'pipeline'?",
+        "options": [
+            "A container for storing code",
+            "A series of steps to automate software delivery processes",
+            "A method for monitoring build status",
+            "A plugin for integrating with Git"
+        ],
+        "correct_option_id": 1,
+        "explanation": "A pipeline in Jenkins is a series of steps that automate software delivery processes, from build to deployment."
+    },
+    {
+        "question": "Which of the following is an Infrastructure as Code (IaC) tool?",
+        "options": [
+            "Docker",
+            "Terraform",
+            "Kubernetes",
+            "Jenkins"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Terraform is an Infrastructure as Code (IaC) tool that allows users to define and manage infrastructure using code."
+    },
+    {
+        "question": "What is the purpose of `kubectl logs` in Kubernetes?",
+        "options": [
+            "To deploy a pod",
+            "To view the resource configuration",
+            "To fetch logs from a pod",
+            "To scale a deployment"
+        ],
+        "correct_option_id": 2,
+        "explanation": "`kubectl logs` fetches and displays logs from a specific pod or container in Kubernetes."
+    },
+    {
+        "question": "Which Kubernetes object is used to ensure a specified number of pod replicas are running?",
+        "options": [
+            "Deployment",
+            "StatefulSet",
+            "DaemonSet",
+            "ReplicaSet"
+        ],
+        "correct_option_id": 3,
+        "explanation": "A ReplicaSet ensures that a specified number of pod replicas are running at all times."
+    },
+    {
+        "question": "In CI/CD pipelines, what is the primary purpose of a staging environment?",
+        "options": [
+            "To build the application",
+            "To deploy production changes",
+            "To simulate production for testing",
+            "To store artifacts"
+        ],
+        "correct_option_id": 2,
+        "explanation": "A staging environment is used to simulate the production environment for testing purposes before deploying to production."
+    },
+    {
+        "question": "What is the role of an Ingress in Kubernetes?",
+        "options": [
+            "To manage internal pod communication",
+            "To expose services to the internet",
+            "To monitor cluster metrics",
+            "To provide persistent storage for pods"
+        ],
+        "correct_option_id": 1,
+        "explanation": "An Ingress manages external access to services, typically HTTP, by providing routing rules."
+    },
+    {
+        "question": "Which tool is most commonly used for container orchestration?",
+        "options": [
+            "Docker",
+            "Kubernetes",
+            "Terraform",
+            "Ansible"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Kubernetes is the most widely used tool for container orchestration, managing containerized applications across clusters."
+    },
+    {
+        "question": "In Git, what does the command `git cherry-pick` do?",
+        "options": [
+            "Reverts a specific commit",
+            "Combines multiple branches",
+            "Applies changes from a specific commit to another branch",
+            "Lists commits with conflicts"
+        ],
+        "correct_option_id": 2,
+        "explanation": "The `git cherry-pick` command applies the changes from a specific commit to the current branch."
+    },
+    {
+        "question": "What does the `terraform plan` command do?",
+        "options": [
+            "Applies infrastructure changes",
+            "Generates and shows the execution plan for changes",
+            "Destroys infrastructure resources",
+            "Installs Terraform providers"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`terraform plan` generates and shows the execution plan, allowing users to preview changes before applying them."
+    },
+    {
+        "question": "What is the main purpose of a service mesh in a microservices architecture?",
+        "options": [
+            "To build microservices",
+            "To deploy containers",
+            "To manage service-to-service communication",
+            "To create network policies"
+        ],
+        "correct_option_id": 2,
+        "explanation": "A service mesh manages service-to-service communication, including traffic control, observability, and security."
+    },
+    {
+        "question": "In Jenkins, what is a 'pipeline'?",
+        "options": [
+            "A container for storing code",
+            "A series of steps to automate software delivery processes",
+            "A method for monitoring build status",
+            "A plugin for integrating with Git"
+        ],
+        "correct_option_id": 1,
+        "explanation": "A pipeline in Jenkins is a series of steps that automate software delivery processes, from build to deployment."
+    },
+    {
+        "question": "Which of the following is an Infrastructure as Code (IaC) tool?",
+        "options": [
+            "Docker",
+            "Terraform",
+            "Kubernetes",
+            "Jenkins"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Terraform is an Infrastructure as Code (IaC) tool that allows users to define and manage infrastructure using code."
+    },
+    {
+        "question": "What is the purpose of `kubectl logs` in Kubernetes?",
+        "options": [
+            "To deploy a pod",
+            "To view the resource configuration",
+            "To fetch logs from a pod",
+            "To scale a deployment"
+        ],
+        "correct_option_id": 2,
+        "explanation": "`kubectl logs` fetches and displays logs from a specific pod or container in Kubernetes."
+    },{
+        "question": "Which tool is used to monitor container resource usage in Kubernetes?",
+        "options": ["Prometheus", "Grafana", "cAdvisor", "Nagios"],
+        "correct_option_id": 2,
+        "explanation": "cAdvisor is used to monitor container resource usage and performance in Kubernetes."
+    },
+    {
+        "question": "In Kubernetes, what does the `kubectl apply` command do?",
+        "options": [
+            "Deletes resources from a cluster",
+            "Applies a configuration to resources",
+            "Lists all resources in a cluster",
+            "Builds container images"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`kubectl apply` is used to apply a configuration file to create or update Kubernetes resources."
+    },
+    {
+        "question": "What is the purpose of a `ServiceAccount` in Kubernetes?",
+        "options": [
+            "To define user authentication",
+            "To allow pods to interact with the Kubernetes API",
+            "To manage RBAC permissions for users",
+            "To store sensitive environment variables"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`ServiceAccount` allows pods to authenticate with the Kubernetes API for accessing resources."
+    },
+    {
+        "question": "What is the function of `kubectl port-forward`?",
+        "options": [
+            "To expose a service to the internet",
+            "To forward traffic from a local machine to a Kubernetes pod",
+            "To configure pod networking",
+            "To scale deployments"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`kubectl port-forward` forwards traffic from a local machine to a Kubernetes pod for debugging or testing."
+    },
+    {
+        "question": "What is the purpose of `Dockerfile`?",
+        "options": [
+            "To manage container images",
+            "To define the instructions to build a Docker image",
+            "To create container orchestration rules",
+            "To store container logs"
+        ],
+        "correct_option_id": 1,
+        "explanation": "A `Dockerfile` contains instructions used to build a Docker image."
+    },
+    {
+        "question": "What does the `helm rollback` command do?",
+        "options": [
+            "Updates a Helm chart to a new version",
+            "Deletes a Helm release",
+            "Rolls back a Helm release to a previous version",
+            "Lists all available Helm releases"
+        ],
+        "correct_option_id": 2,
+        "explanation": "`helm rollback` reverts a Helm release to a previous version."
+    },
+    {
+        "question": "What is the function of a PersistentVolume (PV) in Kubernetes?",
+        "options": [
+            "To define temporary storage for pods",
+            "To provide persistent storage that outlives a pod's lifecycle",
+            "To manage CPU and memory allocation",
+            "To scale the cluster's resources"
+        ],
+        "correct_option_id": 1,
+        "explanation": "A `PersistentVolume` provides persistent storage that outlives the lifecycle of pods."
+    },
+    {
+        "question": "What is the purpose of `kubectl scale`?",
+        "options": [
+            "To create a new deployment",
+            "To increase or decrease the number of pod replicas",
+            "To resize cluster nodes",
+            "To change the size of persistent storage"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`kubectl scale` changes the number of replicas for a Kubernetes deployment or replica set."
+    },
+    {
+        "question": "What does the `ansible-playbook` command do?",
+        "options": [
+            "Runs tasks defined in an Ansible playbook",
+            "Builds Docker containers",
+            "Manages Helm charts",
+            "Monitors system metrics"
+        ],
+        "correct_option_id": 0,
+        "explanation": "`ansible-playbook` executes the tasks and roles defined in an Ansible playbook."
+    },
+    {
+        "question": "Which of the following tools is used for logging in Kubernetes?",
+        "options": ["Fluentd", "Grafana", "Jenkins", "Ansible"],
+        "correct_option_id": 0,
+        "explanation": "Fluentd is a popular tool used for logging and aggregating logs in Kubernetes."
+    },
+    {
+        "question": "What is the role of a Kubernetes controller?",
+        "options": [
+            "To expose services to the internet",
+            "To ensure the desired state of resources is maintained",
+            "To deploy container images",
+            "To manage persistent volumes"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Kubernetes controllers ensure the desired state of resources is continuously maintained."
+    },
+    {
+        "question": "What does the `docker ps` command do?",
+        "options": [
+            "Lists all running containers",
+            "Starts a new container",
+            "Removes unused images",
+            "Builds a new Docker image"
+        ],
+        "correct_option_id": 0,
+        "explanation": "`docker ps` lists all currently running containers."
+    },
+    {
+        "question": "Which protocol is commonly used for communication between Prometheus and exporters?",
+        "options": ["HTTP", "FTP", "gRPC", "MQTT"],
+        "correct_option_id": 0,
+        "explanation": "Prometheus uses HTTP to communicate with exporters for scraping metrics."
+    },
+    {
+        "question": "What is a StatefulSet in Kubernetes?",
+        "options": [
+            "An object for managing stateless applications",
+            "An object for managing stateful applications",
+            "A tool for monitoring pods",
+            "A mechanism for scheduling nodes"
+        ],
+        "correct_option_id": 1,
+        "explanation": "StatefulSet is used to manage stateful applications in Kubernetes, ensuring predictable pod identity."
+    },
+    {
+        "question": "Which CI/CD tool uses Jenkinsfiles?",
+        "options": ["GitLab", "CircleCI", "Jenkins", "ArgoCD"],
+        "correct_option_id": 2,
+        "explanation": "Jenkins uses Jenkinsfiles to define pipelines for CI/CD."
+    },
+    {
+        "question": "What does the `kubectl create configmap` command do?",
+        "options": [
+            "Creates a ConfigMap from a file or literal values",
+            "Generates a YAML file for ConfigMap",
+            "Deletes an existing ConfigMap",
+            "Lists all ConfigMaps"
+        ],
+        "correct_option_id": 0,
+        "explanation": "`kubectl create configmap` creates a new ConfigMap from a file or provided values."
+    },
+    {
+        "question": "What is the purpose of a Horizontal Pod Autoscaler in Kubernetes?",
+        "options": [
+            "To scale nodes in a cluster",
+            "To scale pods based on resource usage",
+            "To manage network policies",
+            "To balance traffic across services"
+        ],
+        "correct_option_id": 1,
+        "explanation": "The Horizontal Pod Autoscaler automatically scales the number of pods based on resource usage."
+    },
+    {
+        "question": "What does the `terraform init` command do?",
+        "options": [
+            "Applies changes to infrastructure",
+            "Initializes a Terraform working directory",
+            "Destroys infrastructure resources",
+            "Lists Terraform modules"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`terraform init` initializes a working directory by downloading providers and setting up the environment."
+    },
+    {
+        "question": "Which Kubernetes object manages network traffic for a service?",
+        "options": ["Ingress", "Service", "Pod", "Endpoint"],
+        "correct_option_id": 0,
+        "explanation": "Ingress manages external network traffic for services in Kubernetes."
+    },
+    {
+        "question": "What is the function of a Docker registry?",
+        "options": [
+            "To build container images",
+            "To run containers",
+            "To store and distribute container images",
+            "To monitor containers"
+        ],
+        "correct_option_id": 2,
+        "explanation": "A Docker registry is used to store and distribute container images."
+    },
+    {
+        "question": "Which tool is commonly used for managing IaC in cloud environments?",
+        "options": ["Docker", "Terraform", "Grafana", "Prometheus"],
+        "correct_option_id": 1,
+        "explanation": "Terraform is commonly used for managing Infrastructure as Code (IaC) in cloud environments."
+    }
+]
