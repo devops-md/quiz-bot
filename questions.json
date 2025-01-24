@@ -2143,5 +2143,1204 @@
         ],
         "correct_option_id": 1,
         "explanation": "MTTD measures how quickly a disaster or failure event is detected."
+    },
+    {
+        "question": "Which of the following commands is used to list all installed packages on a Debian-based Linux system?",
+        "options": [
+            "dpkg -l",
+            "yum list installed",
+            "apt list --installed",
+            "rpm -qa"
+        ],
+        "correct_option_id": 0,
+        "explanation": "The 'dpkg -l' command lists all installed packages on Debian-based systems."
+    },
+    {
+        "question": "Which file on a Linux system contains user account information?",
+        "options": [
+            "/etc/passwd",
+            "/etc/group",
+            "/etc/shadow",
+            "/etc/hosts"
+        ],
+        "correct_option_id": 0,
+        "explanation": "The '/etc/passwd' file contains user account information such as usernames, user IDs, and more."
+    },
+    {
+        "question": "In Windows Server, which role is required to enable file sharing for a network?",
+        "options": [
+            "File and Storage Services",
+            "Print and Document Services",
+            "Web Server (IIS)",
+            "Remote Desktop Services"
+        ],
+        "correct_option_id": 0,
+        "explanation": "The 'File and Storage Services' role is required to enable file sharing on Windows Server."
+    },
+    {
+        "question": "Which of the following is NOT a feature of Cloud computing?",
+        "options": [
+            "On-demand self-service",
+            "Broad network access",
+            "Local infrastructure management",
+            "Resource pooling"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Cloud computing provides on-demand services, broad network access, and resource pooling, but it does not require local infrastructure management."
+    },
+    {
+        "question": "Which of the following DevOps tools is used for continuous integration?",
+        "options": [
+            "Jenkins",
+            "Terraform",
+            "Docker",
+            "Ansible"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Jenkins is a popular open-source tool for continuous integration and continuous delivery (CI/CD)."
+    },
+    {
+        "question": "Which command in Linux is used to monitor real-time system resource usage?",
+        "options": [
+            "top",
+            "ps",
+            "df",
+            "du"
+        ],
+        "correct_option_id": 0,
+        "explanation": "'top' provides a real-time overview of system resources such as CPU, memory, and running processes."
+    },
+    {
+        "question": "Which of the following commands is used to manage Windows services from the command line?",
+        "options": [
+            "net start/stop",
+            "service",
+            "sc config",
+            "powershell"
+        ],
+        "correct_option_id": 0,
+        "explanation": "'net start/stop' is used to start or stop Windows services from the command line."
+    },
+    {
+        "question": "Which of the following is a tool used for infrastructure as code (IaC)?",
+        "options": [
+            "Terraform",
+            "Docker",
+            "Kubernetes",
+            "GitLab"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Terraform is a tool used to manage infrastructure as code (IaC) across different cloud providers."
+    },
+    {
+        "question": "What is the primary purpose of Kubernetes in a DevOps pipeline?",
+        "options": [
+            "Version control management",
+            "Container orchestration",
+            "Infrastructure as code",
+            "Application monitoring"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Kubernetes is primarily used for container orchestration, automating the deployment, scaling, and management of containerized applications."
+    },
+    {
+        "question": "Which of the following tools is used for configuration management in DevOps?",
+        "options": [
+            "Ansible",
+            "Jenkins",
+            "Docker",
+            "Vagrant"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Ansible is a popular configuration management tool used to automate server provisioning, configuration, and management."
+    },
+    {
+        "question": "Which of the following is a key benefit of continuous integration?",
+        "options": [
+            "Faster delivery of code",
+            "Fewer production bugs",
+            "Fewer environment issues",
+            "All of the above"
+        ],
+        "correct_option_id": 3,
+        "explanation": "Continuous integration helps deliver code faster, reduce bugs, and eliminate environment issues by ensuring that code is tested frequently."
+    },
+    {
+        "question": "Which Linux command is used to search for files in the system?",
+        "options": [
+            "find",
+            "locate",
+            "grep",
+            "search"
+        ],
+        "correct_option_id": 0,
+        "explanation": "The 'find' command is used to search for files within the filesystem."
+    },
+    {
+        "question": "What is the purpose of the 'docker-compose' tool?",
+        "options": [
+            "Building and managing Docker containers",
+            "Managing Docker clusters",
+            "Running multiple Docker containers as a single service",
+            "Deploying Docker images"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Docker Compose allows you to define and manage multi-container Docker applications as a single service."
+    },
+    {
+        "question": "Which cloud service model provides a platform for deploying applications without managing the underlying infrastructure?",
+        "options": [
+            "IaaS",
+            "PaaS",
+            "SaaS",
+            "CaaS"
+        ],
+        "correct_option_id": 1,
+        "explanation": "PaaS (Platform as a Service) provides a platform for deploying applications without worrying about the underlying hardware and infrastructure."
+    },
+    {
+        "question": "Which of the following is used for version control in DevOps?",
+        "options": [
+            "Git",
+            "Ansible",
+            "Docker",
+            "Kubernetes"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Git is a version control system widely used in DevOps for managing code changes and collaboration."
+    },
+    {
+        "question": "Which of the following is a key feature of Docker?",
+        "options": [
+            "Isolation of applications in containers",
+            "Automatic scaling of applications",
+            "Performance monitoring",
+            "Load balancing"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Docker provides isolation of applications in containers, ensuring that they run consistently across different environments."
+    },
+    {
+        "question": "Which of the following services is NOT a feature of Amazon Web Services (AWS)?",
+        "options": [
+            "EC2",
+            "Lambda",
+            "S3",
+            "CloudFoundry"
+        ],
+        "correct_option_id": 3,
+        "explanation": "CloudFoundry is not an AWS service. It's an open-source platform as a service (PaaS) framework."
+    },
+    {
+        "question": "In a DevOps pipeline, which tool is used for automated testing?",
+        "options": [
+            "JUnit",
+            "Git",
+            "Jenkins",
+            "Docker"
+        ],
+        "correct_option_id": 0,
+        "explanation": "JUnit is a widely used tool for automated unit testing in DevOps."
+    },
+    {
+        "question": "Which of the following is an open-source automation tool used to configure and manage systems in a DevOps environment?",
+        "options": [
+            "Chef",
+            "Jenkins",
+            "Ansible",
+            "GitLab"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Ansible is an open-source automation tool that helps manage configurations and automate repetitive tasks in DevOps."
+    },
+    {
+        "question": "Which of the following is used for automated cloud infrastructure provisioning?",
+        "options": [
+            "Terraform",
+            "Ansible",
+            "Kubernetes",
+            "Jenkins"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Terraform is used for automating cloud infrastructure provisioning and managing it as code."
+    },
+    {
+        "question": "In Kubernetes, which of the following is responsible for managing the distribution and deployment of containers across the nodes in the cluster?",
+        "options": [
+            "Pod",
+            "Deployment",
+            "Kubelet",
+            "Scheduler"
+        ],
+        "correct_option_id": 3,
+        "explanation": "The Kubernetes Scheduler is responsible for managing the distribution and deployment of pods across the nodes in the cluster based on resource availability."
+    },
+    {
+        "question": "Which of the following is the primary difference between LVM (Logical Volume Manager) and traditional partitioning in Linux?",
+        "options": [
+            "LVM provides more flexible partition management and resizing of file systems.",
+            "LVM does not allow resizing of partitions once created.",
+            "LVM can only be used with SSD storage.",
+            "Traditional partitioning allows dynamic resizing of partitions."
+        ],
+        "correct_option_id": 0,
+        "explanation": "LVM (Logical Volume Manager) allows for flexible management of disk partitions and dynamic resizing of file systems, which is not possible with traditional partitioning."
+    },
+    {
+        "question": "What is the purpose of 'Infrastructure as Code (IaC)' in DevOps, and which tool is most commonly associated with this concept?",
+        "options": [
+            "IaC automates manual processes by codifying infrastructure setup. Terraform is a widely-used tool.",
+            "IaC automates deployment pipelines. Jenkins is most commonly associated with it.",
+            "IaC provides version control for configuration files. Git is the most common tool.",
+            "IaC focuses on application deployment only. Docker is the most common tool."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Infrastructure as Code (IaC) automates the management and provisioning of infrastructure through code, and Terraform is the most commonly used tool for this purpose."
+    },
+    {
+        "question": "Which of the following is a key advantage of using Kubernetes over Docker Swarm in a large-scale production environment?",
+        "options": [
+            "Kubernetes offers more complex deployment strategies and auto-scaling.",
+            "Docker Swarm is better suited for high-traffic applications.",
+            "Kubernetes is easier to set up and manage compared to Docker Swarm.",
+            "Docker Swarm is more suitable for multi-cloud environments."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Kubernetes offers advanced deployment strategies, auto-scaling, and a wider array of features for large-scale production environments, making it ideal for handling complex workloads."
+    },
+    {
+        "question": "Which of the following Windows Server services is responsible for enabling remote management of servers over the network using PowerShell?",
+        "options": [
+            "Windows Management Framework (WMF)",
+            "Windows Remote Management (WinRM)",
+            "Remote Desktop Services (RDS)",
+            "Windows Admin Center (WAC)"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Windows Remote Management (WinRM) is used to remotely manage Windows Servers using PowerShell over the network."
+    },
+    {
+        "question": "In AWS, which service allows you to manage and monitor distributed applications with multiple microservices and APIs, providing visibility into system performance and errors?",
+        "options": [
+            "AWS CloudFormation",
+            "AWS Lambda",
+            "AWS CloudWatch",
+            "AWS X-Ray"
+        ],
+        "correct_option_id": 3,
+        "explanation": "AWS X-Ray is used to analyze and debug distributed applications by providing deep insights into the performance of microservices and APIs."
+    },
+    {
+        "question": "In Git, what is the purpose of the 'rebase' command as compared to 'merge'?",
+        "options": [
+            "'Rebase' integrates changes from one branch to another by creating a new commit history, while 'merge' combines the changes without altering the commit history.",
+            "'Rebase' creates a new branch from a different commit, while 'merge' integrates changes directly.",
+            "'Rebase' modifies the commit message for each commit, while 'merge' keeps the commit messages unchanged.",
+            "'Rebase' is used for version control management, while 'merge' is used for continuous integration."
+        ],
+        "correct_option_id": 0,
+        "explanation": "The 'rebase' command re-applies commits from one branch onto another by creating a new commit history, while 'merge' combines changes without changing the commit history."
+    },
+    {
+        "question": "Which of the following statements best describes the concept of 'Immutable Infrastructure' in DevOps?",
+        "options": [
+            "Immutable Infrastructure refers to infrastructure that can be updated without changing the underlying components.",
+            "Immutable Infrastructure requires rebuilding the infrastructure from scratch whenever a change is needed.",
+            "Immutable Infrastructure focuses on making changes to the underlying infrastructure without affecting deployed applications.",
+            "Immutable Infrastructure automatically scales the infrastructure according to the load."
+        ],
+        "correct_option_id": 1,
+        "explanation": "Immutable Infrastructure means rebuilding infrastructure from scratch whenever changes are needed, ensuring that no modifications occur on the running infrastructure."
+    },
+    {
+        "question": "Which of the following is a significant difference between Ansible and Chef in terms of configuration management?",
+        "options": [
+            "Ansible uses agentless architecture, while Chef requires agents to be installed on managed nodes.",
+            "Chef uses agentless architecture, while Ansible requires agents to be installed on managed nodes.",
+            "Ansible is a declarative language, while Chef is imperative.",
+            "Chef is used for container orchestration, while Ansible is used for configuration management."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Ansible is agentless and does not require agents on managed nodes, while Chef requires agents to be installed on each managed node."
+    },
+    {
+        "question": "Which of the following best describes the function of the 'control plane' in a Kubernetes cluster?",
+        "options": [
+            "It manages the network and storage components in the cluster.",
+            "It stores configuration data for the cluster.",
+            "It runs the actual applications and containers in the cluster.",
+            "It controls the scheduling and orchestration of workloads across the cluster."
+        ],
+        "correct_option_id": 3,
+        "explanation": "The control plane is responsible for managing the scheduling, orchestration, and overall state of the cluster, ensuring that the desired state is maintained."
+    },
+    {
+        "question": "What is the purpose of 'service discovery' in a containerized environment like Docker or Kubernetes?",
+        "options": [
+            "It allows containers to automatically update their images when a new version is available.",
+            "It ensures that containers can dynamically find and communicate with each other, even when their IP addresses change.",
+            "It scales containers up and down based on resource usage.",
+            "It monitors the health of containers and restarts them if they fail."
+        ],
+        "correct_option_id": 1,
+        "explanation": "Service discovery in containerized environments allows containers to find and communicate with each other, even as their IP addresses change dynamically."
+    },
+    {
+        "question": "Which of the following statements is true about 'Blue-Green Deployment' in the context of DevOps?",
+        "options": [
+            "Blue-Green Deployment involves creating two identical production environments: one for the current version (Blue) and one for the new version (Green).",
+            "Blue-Green Deployment involves continuous integration and deployment without downtime.",
+            "Blue-Green Deployment requires manually switching between different branches in Git.",
+            "Blue-Green Deployment ensures that no rollback is required after a release."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Blue-Green Deployment involves maintaining two identical production environments, one for the current version (Blue) and one for the new version (Green), allowing for quick switching with minimal downtime."
+    },
+    {
+        "question": "In Jenkins, what is the purpose of a 'Pipeline as Code'?",
+        "options": [
+            "To allow Jenkins pipelines to be versioned and stored in a source code repository.",
+            "To configure Jenkins pipelines through a graphical user interface.",
+            "To automate the creation of new Jenkins jobs.",
+            "To enable Jenkins to manage Docker container deployments."
+        ],
+        "correct_option_id": 0,
+        "explanation": "'Pipeline as Code' allows Jenkins pipeline definitions to be stored in a version-controlled source repository, enabling automated, repeatable, and versioned deployments."
+    },
+    {
+        "question": "Which of the following best describes the concept of 'Continuous Delivery' in DevOps?",
+        "options": [
+            "Continuous Delivery is the practice of automating the entire deployment pipeline, including production releases.",
+            "Continuous Delivery focuses only on automated testing and integration, without deploying to production.",
+            "Continuous Delivery ensures that the product is always in a deployable state, but manual approval is required for production deployment.",
+            "Continuous Delivery automates the deployment of code only to development environments."
+        ],
+        "correct_option_id": 2,
+        "explanation": "Continuous Delivery ensures that the application is always in a deployable state, but manual approval is required before deployment to production."
+    },
+    {
+        "question": "Which cloud service provider offers a managed Kubernetes service known as EKS (Elastic Kubernetes Service)?",
+        "options": [
+            "Google Cloud Platform (GCP)",
+            "Microsoft Azure",
+            "Amazon Web Services (AWS)",
+            "IBM Cloud"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Amazon Web Services (AWS) offers Elastic Kubernetes Service (EKS), a fully managed Kubernetes service for deploying and managing containerized applications."
+    },
+    {
+        "question": "Which of the following best describes the concept of 'Zero Trust Architecture' in cybersecurity?",
+        "options": [
+            "Access to systems is granted based on internal network IP addresses only.",
+            "All users, regardless of location, must be authenticated, authorized, and continuously validated before accessing resources.",
+            "It relies on firewalls to segregate network traffic into trusted and untrusted zones.",
+            "Only users with administrative rights are granted access to sensitive systems."
+        ],
+        "correct_option_id": 1,
+        "explanation": "Zero Trust Architecture assumes that both external and internal networks can be compromised. Therefore, every request for access is validated regardless of the origin."
+    },
+    {
+        "question": "What is the primary purpose of a Web Application Firewall (WAF)?",
+        "options": [
+            "To detect and mitigate DDoS attacks by filtering malicious web traffic.",
+            "To prevent unauthorized access to the web server by limiting traffic based on geographic location.",
+            "To filter incoming requests to web applications to detect and block malicious traffic such as SQL injections or cross-site scripting (XSS).",
+            "To manage SSL certificates for secure web traffic."
+        ],
+        "correct_option_id": 2,
+        "explanation": "A Web Application Firewall (WAF) monitors and filters HTTP traffic between a web application and the internet, protecting against application-layer attacks such as SQL injections and XSS."
+    },
+    {
+        "question": "Which of the following best describes the concept of 'least privilege' in security?",
+        "options": [
+            "Users should be granted only the minimum level of access required to perform their job functions.",
+            "All users must have the same level of access to all resources in the system.",
+            "Users should have the privilege to access any system they have used in the past.",
+            "Permissions should be automatically escalated based on the user’s experience."
+        ],
+        "correct_option_id": 0,
+        "explanation": "The principle of least privilege ensures that users are granted the minimum access required to perform their job, minimizing the attack surface in case of compromise."
+    },
+    {
+        "question": "Which of the following best describes the role of Public Key Infrastructure (PKI) in security?",
+        "options": [
+            "PKI is used to encrypt web traffic and secure passwords.",
+            "PKI enables secure communication and authentication by using asymmetric encryption and digital certificates.",
+            "PKI is used to store and manage secret keys for symmetric encryption algorithms.",
+            "PKI is a service used to monitor network traffic for potential security breaches."
+        ],
+        "correct_option_id": 1,
+        "explanation": "Public Key Infrastructure (PKI) uses asymmetric encryption (public and private keys) to secure communication and provide authentication via digital certificates."
+    },
+    {
+        "question": "What is the main purpose of using Multi-Factor Authentication (MFA) in security?",
+        "options": [
+            "To make password cracking more difficult by adding additional layers of complexity.",
+            "To increase the number of users able to access a system at once.",
+            "To require two or more forms of verification before granting access to an account or system.",
+            "To prevent unauthorized access by blocking login attempts from specific geographic locations."
+        ],
+        "correct_option_id": 2,
+        "explanation": "Multi-Factor Authentication (MFA) requires users to provide two or more verification methods, typically something they know (password), something they have (token), and something they are (biometric data)."
+    },
+    {
+        "question": "Which of the following best describes the function of an Intrusion Detection System (IDS)?",
+        "options": [
+            "An IDS monitors network traffic for signs of suspicious or malicious activity and alerts administrators.",
+            "An IDS blocks all unauthorized access to a system.",
+            "An IDS manages encryption keys and certificates.",
+            "An IDS automatically resolves security incidents without human intervention."
+        ],
+        "correct_option_id": 0,
+        "explanation": "An Intrusion Detection System (IDS) monitors network traffic for signs of suspicious activity and sends alerts to administrators for further action."
+    },
+    {
+        "question": "What is the purpose of encryption at rest in cloud security?",
+        "options": [
+            "To protect data while it is being transmitted between client devices and cloud servers.",
+            "To secure data when it is stored on cloud servers, ensuring that unauthorized users cannot access it.",
+            "To compress data for faster transmission over the network.",
+            "To anonymize sensitive data stored in the cloud."
+        ],
+        "correct_option_id": 1,
+        "explanation": "Encryption at rest protects data when it is stored on a cloud server or storage device, ensuring that unauthorized users cannot access the data even if they have physical access to the storage."
+    },
+    {
+        "question": "Which of the following tools can be used to implement vulnerability scanning in a DevOps pipeline?",
+        "options": [
+            "Nessus",
+            "Nagios",
+            "Kubernetes",
+            "Docker"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Nessus is a vulnerability scanning tool used to identify potential security issues in systems and applications, and it can be integrated into a DevOps pipeline."
+    },
+    {
+        "question": "Which cryptographic method is used by HTTPS to secure communication between a web server and a client?",
+        "options": [
+            "Symmetric encryption",
+            "Asymmetric encryption",
+            "Hashing",
+            "Obfuscation"
+        ],
+        "correct_option_id": 1,
+        "explanation": "HTTPS uses asymmetric encryption with public and private keys for secure communication between a web server and a client, providing confidentiality and integrity."
+    },
+    {
+        "question": "In the context of security, what is the main purpose of a DMZ (Demilitarized Zone) in network architecture?",
+        "options": [
+            "To segment the internal network from the external network, offering additional protection for internal resources.",
+            "To provide direct, unfiltered access to internal servers from the internet.",
+            "To host public-facing services and prevent direct access to the internal network.",
+            "To monitor all incoming and outgoing network traffic for malware."
+        ],
+        "correct_option_id": 2,
+        "explanation": "A DMZ is used to host publicly accessible servers while providing an additional layer of security between internal resources and the external network, preventing direct access to the internal network."
+    },
+    {
+        "question": "Which of the following security best practices helps protect against SQL injection attacks?",
+        "options": [
+            "Using prepared statements and parameterized queries to prevent malicious data injection.",
+            "Encrypting all database fields.",
+            "Disabling cookies in web browsers.",
+            "Limiting the number of login attempts on a website."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Prepared statements and parameterized queries prevent SQL injection by ensuring that user input is treated as data, not executable code."
+    },
+    {
+        "question": "What does the term 'Security as Code' refer to in a DevOps pipeline?",
+        "options": [
+            "Using automated tests to detect security vulnerabilities.",
+            "Writing security policies in code, enabling automated enforcement and versioning.",
+            "Manually reviewing code to identify vulnerabilities.",
+            "Implementing firewalls at the application level."
+        ],
+        "correct_option_id": 1,
+        "explanation": "Security as Code refers to the practice of embedding security policies and controls into the DevOps pipeline, allowing security configurations to be versioned and automatically enforced."
+    },
+    {
+        "question": "Which of the following is a key advantage of using Cloud Access Security Brokers (CASBs) in a cloud environment?",
+        "options": [
+            "CASBs provide centralized control over cloud resources, enforcing security policies and compliance requirements.",
+            "CASBs monitor and block all incoming and outgoing network traffic to cloud applications.",
+            "CASBs automatically update encryption keys for secure cloud communication.",
+            "CASBs are used to automate the deployment of cloud resources."
+        ],
+        "correct_option_id": 0,
+        "explanation": "CASBs provide visibility and control over cloud service usage, ensuring that security policies, data protection, and compliance are enforced across cloud environments."
+    },
+    {
+        "question": "What is the primary goal of 'Data Masking' in security?",
+        "options": [
+            "To convert sensitive data into a non-readable format while maintaining its utility for development and testing purposes.",
+            "To encrypt data during storage to prevent unauthorized access.",
+            "To anonymize all customer data during transactions.",
+            "To monitor access logs for potential breaches."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Data masking replaces sensitive data with non-sensitive equivalents, maintaining its functionality for testing or development without exposing real sensitive data."
+    },
+    {
+        "question": "Which of the following is a key benefit of using a Security Information and Event Management (SIEM) system?",
+        "options": [
+            "SIEM systems collect, analyze, and correlate security event data from across the organization to provide real-time threat detection.",
+            "SIEM systems encrypt sensitive data in transit.",
+            "SIEM systems automatically patch vulnerabilities in software applications.",
+            "SIEM systems prevent unauthorized physical access to servers."
+        ],
+        "correct_option_id": 0,
+        "explanation": "SIEM systems aggregate and analyze security event data in real-time, helping organizations detect and respond to potential security threats."
+    },
+    {
+        "question": "What is the main purpose of using HSTS (HTTP Strict Transport Security) in web security?",
+        "options": [
+            "To enforce the use of HTTPS on all connections to the server, preventing downgrade attacks.",
+            "To encrypt communication between the server and the client using TLS.",
+            "To prevent cross-site scripting (XSS) attacks.",
+            "To automatically update server certificates."
+        ],
+        "correct_option_id": 0,
+        "explanation": "HTTP Strict Transport Security (HSTS) ensures that all future communications with a server are done over HTTPS, protecting against man-in-the-middle attacks and downgrade attacks."
+    },
+    {
+        "question": "Which cryptographic algorithm is typically used in SSL/TLS protocols to establish secure communication channels between a client and a server?",
+        "options": [
+            "RSA",
+            "AES",
+            "DES",
+            "SHA-256"
+        ],
+        "correct_option_id": 0,
+        "explanation": "RSA is commonly used in SSL/TLS protocols for secure key exchange, ensuring encrypted communication between clients and servers."
+    },
+    {
+        "question": "Which of the following is the primary benefit of using a VPN (Virtual Private Network) in a secure network environment?",
+        "options": [
+            "It encrypts traffic and hides the user's IP address, providing secure communication over public networks.",
+            "It automatically blocks all incoming malware from external networks.",
+            "It accelerates network traffic by bypassing firewalls.",
+            "It monitors network traffic for unauthorized access."
+        ],
+        "correct_option_id": 0,
+        "explanation": "A VPN encrypts network traffic and routes it through a secure tunnel, protecting data from interception when using public or unsecured networks."
+    },
+    {
+        "question": "Which of the following security concepts ensures that only authorized users can access a system?",
+        "options": [
+            "Confidentiality",
+            "Authentication",
+            "Integrity",
+            "Non-repudiation"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Authentication ensures that users are who they say they are, allowing access to a system only to authorized individuals."
+    },
+    {
+        "question": "Which of the following best describes a 'Man-in-the-Middle (MITM)' attack?",
+        "options": [
+            "An attacker intercepts communication between two parties to steal or modify data without their knowledge.",
+            "An attacker tries to overload a server with excessive requests, causing a denial of service.",
+            "An attacker sends fake authentication tokens to gain access to user accounts.",
+            "An attacker uses phishing emails to trick users into revealing login credentials."
+        ],
+        "correct_option_id": 0,
+        "explanation": "A Man-in-the-Middle (MITM) attack involves intercepting and potentially altering communication between two parties without their awareness."
+    },
+    {
+        "question": "What is the main function of the 'auditd' service in Linux?",
+        "options": [
+            "It monitors system logs for security-related events.",
+            "It encrypts files and directories for secure storage.",
+            "It manages user authentication and access controls.",
+            "It automatically patches the system with the latest security updates."
+        ],
+        "correct_option_id": 0,
+        "explanation": "'auditd' is the Linux Audit Daemon, which records events related to security, access, and system activities to facilitate audit logging."
+    },
+    {
+        "question": "What is the purpose of 'Public Key Pinning' in web security?",
+        "options": [
+            "To prevent SSL/TLS certificate impersonation attacks by specifying which certificates a client will trust.",
+            "To store public keys in a secure location for better encryption management.",
+            "To ensure that only approved public keys are used for encrypting web traffic.",
+            "To block unauthorized IP addresses from accessing a server."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Public Key Pinning allows a website to specify which public keys are trusted for SSL/TLS certificates, preventing certificate spoofing attacks."
+    },
+    {
+        "question": "Which of the following techniques is used to prevent Cross-Site Request Forgery (CSRF) attacks?",
+        "options": [
+            "Using SameSite cookies to restrict cross-site request behavior.",
+            "Encrypting sensitive user data in web cookies.",
+            "Using content security policies (CSP) to block malicious scripts.",
+            "Implementing multi-factor authentication (MFA)."
+        ],
+        "correct_option_id": 0,
+        "explanation": "SameSite cookies restrict the ability of browsers to send cookies with cross-site requests, effectively preventing CSRF attacks."
+    },
+    {
+        "question": "Which of the following protocols is used to provide secure communication for email transmissions?",
+        "options": [
+            "IMAPS",
+            "SMTP",
+            "POP3",
+            "FTPS"
+        ],
+        "correct_option_id": 0,
+        "explanation": "IMAPS (IMAP Secure) is used to secure email communication by encrypting messages transmitted over the Internet."
+    },
+    {
+        "question": "What is the key difference between 'symmetric' and 'asymmetric' encryption?",
+        "options": [
+            "Symmetric encryption uses a single key for both encryption and decryption, while asymmetric encryption uses a public and a private key.",
+            "Symmetric encryption is used for larger datasets, while asymmetric encryption is faster.",
+            "Symmetric encryption can only be used for data at rest, while asymmetric encryption works only for data in transit.",
+            "Symmetric encryption requires stronger keys than asymmetric encryption."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Symmetric encryption uses one key for both encryption and decryption, while asymmetric encryption uses two different keys: a public key for encryption and a private key for decryption."
+    },
+    {
+        "question": "Which of the following is a commonly used tool for scanning and identifying vulnerabilities in web applications?",
+        "options": [
+            "Nmap",
+            "Burp Suite",
+            "Wireshark",
+            "Metasploit"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Burp Suite is a widely-used web vulnerability scanner that helps identify security issues in web applications by intercepting and analyzing HTTP/S traffic."
+    },
+    {
+        "question": "Which security protocol is most commonly used to secure the communication between a web browser and a web server?",
+        "options": [
+            "SSL",
+            "SSH",
+            "IPSec",
+            "TLS"
+        ],
+        "correct_option_id": 3,
+        "explanation": "TLS (Transport Layer Security) is the most common protocol for securing communication between a web browser and a web server, replacing SSL in modern systems."
+    },
+    {
+        "question": "What is the role of 'Rate Limiting' in security?",
+        "options": [
+            "To limit the number of requests a user can make to a service in a given period, preventing abuse and denial-of-service attacks.",
+            "To block users who are attempting to brute force authentication credentials.",
+            "To hide sensitive data in user responses.",
+            "To automatically patch vulnerabilities as they are discovered."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Rate limiting restricts the number of requests a user or client can make in a specified timeframe, preventing overuse of resources and mitigating denial-of-service (DoS) attacks."
+    },
+    {
+        "question": "What is 'Phishing' in the context of cybersecurity?",
+        "options": [
+            "A form of attack where an attacker attempts to steal sensitive information through fraudulent emails or websites.",
+            "A form of attack that floods a network with excessive traffic to cause a denial-of-service.",
+            "A technique used to break into encrypted communications.",
+            "A tool used to monitor network traffic for suspicious activity."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Phishing is a social engineering attack that typically uses deceptive emails, websites, or other methods to trick users into disclosing sensitive information such as passwords."
+    },
+    {
+        "question": "What is the purpose of a 'Security Token' in authentication systems?",
+        "options": [
+            "To provide a one-time password (OTP) to authenticate users.",
+            "To store long-term user credentials for authentication.",
+            "To manage access control lists (ACLs) on a system.",
+            "To represent a user's session and securely verify their identity in subsequent requests."
+        ],
+        "correct_option_id": 3,
+        "explanation": "Security tokens are used to represent a user's session and securely verify their identity in future requests, typically as part of token-based authentication systems like OAuth."
+    },
+    {
+        "question": "Which of the following best describes the function of a 'DMZ' (Demilitarized Zone) in network security?",
+        "options": [
+            "It creates a buffer zone between the internal network and untrusted external networks, hosting public-facing services.",
+            "It prevents internal employees from accessing the internet for security reasons.",
+            "It acts as a secure tunnel for encrypted traffic between clients and servers.",
+            "It provides a backup system for storing sensitive internal data."
+        ],
+        "correct_option_id": 0,
+        "explanation": "A DMZ is a zone that acts as a buffer between the internal network and untrusted external networks, usually hosting public-facing services like web servers."
+    },
+    {
+        "question": "What is the main goal of 'Data Loss Prevention' (DLP) technologies?",
+        "options": [
+            "To monitor and control the movement of sensitive data within and outside an organization, preventing unauthorized access.",
+            "To encrypt sensitive data during transmission.",
+            "To prevent unauthorized users from accessing network resources.",
+            "To patch vulnerabilities in software applications."
+        ],
+        "correct_option_id": 0,
+        "explanation": "Data Loss Prevention (DLP) technologies aim to monitor and protect sensitive data from unauthorized access, modification, or leakage both inside and outside the organization."
+    },
+    {
+        "question": "Which of the following describes a 'Brute Force' attack?",
+        "options": [
+            "An attacker tries every possible combination of passwords or keys until the correct one is found.",
+            "An attacker attempts to compromise a system by exploiting known vulnerabilities.",
+            "An attacker intercepts and alters network traffic to steal credentials.",
+            "An attacker floods a system with excessive traffic, causing a denial of service."
+        ],
+        "correct_option_id": 0,
+        "explanation": "A Brute Force attack involves systematically trying all possible password or key combinations to gain unauthorized access to a system."
+    },
+    {
+        "question": "Which of the following security measures helps ensure that logs are tamper-proof?",
+        "options": [
+            "Encryption of log files",
+            "Writing logs to external servers with limited access",
+            "Log rotation",
+            "Disabling log writing for users with administrative rights"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Storing logs on external servers with restricted access helps ensure the logs remain secure and tamper-proof in case of a compromise of the primary system."
+    },
+    {
+        "question": "What are the three primary pillars of observability?",
+        "options": [
+            "Monitoring, Debugging, Profiling",
+            "Logs, Metrics, Traces",
+            "Metrics, Alerts, Dashboards",
+            "Events, Errors, Logs"
+        ],
+        "correct_option_id": 1,
+        "explanation": "The three primary pillars of observability are Logs, Metrics, and Traces."
+    },
+    {
+        "question": "Which open-source tool is most commonly used for distributed tracing?",
+        "options": [
+            "Prometheus",
+            "Jaeger",
+            "Grafana",
+            "Elasticsearch"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Jaeger is a popular open-source tool for distributed tracing."
+    },
+    {
+        "question": "In Prometheus, what is the role of an 'Exporter'?",
+        "options": [
+            "To send alerts to external systems",
+            "To collect and expose metrics from a target system",
+            "To visualize metrics on dashboards",
+            "To aggregate data from multiple sources"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Exporters collect metrics from target systems and expose them to Prometheus."
+    },
+    {
+        "question": "What is the primary purpose of OpenTelemetry?",
+        "options": [
+            "To monitor database performance",
+            "To provide a unified standard for collecting telemetry data",
+            "To manage network configurations",
+            "To optimize storage utilization"
+        ],
+        "correct_option_id": 1,
+        "explanation": "OpenTelemetry provides a standardized framework for collecting and exporting telemetry data like logs, metrics, and traces."
+    },
+    {
+        "question": "What is the main benefit of using distributed tracing in microservices?",
+        "options": [
+            "Identifying resource bottlenecks",
+            "Tracking requests as they propagate across services",
+            "Generating synthetic traffic for testing",
+            "Reducing network latency"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Distributed tracing tracks requests across microservices to identify bottlenecks and dependencies."
+    },
+    {
+        "question": "Which metric type in Prometheus represents a value that only increases over time?",
+        "options": [
+            "Counter",
+            "Gauge",
+            "Histogram",
+            "Summary"
+        ],
+        "correct_option_id": 0,
+        "explanation": "A Counter is a cumulative metric that only increases or resets to zero."
+    },
+    {
+        "question": "Which logging framework is most commonly used with Elasticsearch, Logstash, and Kibana (ELK stack)?",
+        "options": [
+            "Fluentd",
+            "Filebeat",
+            "Log4j",
+            "Elastic Logger"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Filebeat is commonly used to forward logs to Logstash or Elasticsearch in the ELK stack."
+    },
+    {
+        "question": "What does the term 'cardinality' refer to in observability metrics?",
+        "options": [
+            "The frequency of metric updates",
+            "The number of unique label combinations in a dataset",
+            "The size of the time series database",
+            "The precision of metric values"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Cardinality refers to the number of unique combinations of labels in a metrics dataset, which impacts storage and performance."
+    },
+    {
+        "question": "Which of the following is a key feature of Grafana?",
+        "options": [
+            "Centralized log storage",
+            "Interactive and customizable dashboards",
+            "Distributed tracing",
+            "Database management"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Grafana is known for its interactive and customizable dashboards for visualizing metrics."
+    },
+    {
+        "question": "What is the main purpose of Service Level Indicators (SLIs)?",
+        "options": [
+            "To define the scope of service contracts",
+            "To measure specific aspects of a service's performance",
+            "To determine the cost of a service",
+            "To schedule system maintenance"
+        ],
+        "correct_option_id": 1,
+        "explanation": "SLIs measure specific aspects of service performance, such as latency or availability."
+    },
+    {
+        "question": "In a Kubernetes cluster, which component is responsible for collecting resource metrics?",
+        "options": [
+            "Kubelet",
+            "Prometheus Operator",
+            "Metrics Server",
+            "Etcd"
+        ],
+        "correct_option_id": 2,
+        "explanation": "The Metrics Server collects resource usage metrics from nodes and pods in a Kubernetes cluster."
+    },
+    {
+        "question": "What is the primary goal of anomaly detection in observability?",
+        "options": [
+            "To generate real-time metrics",
+            "To identify unexpected patterns or behaviors in system data",
+            "To enhance data encryption",
+            "To improve logging verbosity"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Anomaly detection identifies unexpected patterns or behaviors, often indicating potential issues."
+    },
+    {
+        "question": "Which of the following is a popular time-series database used for observability data?",
+        "options": [
+            "MongoDB",
+            "InfluxDB",
+            "MySQL",
+            "PostgreSQL"
+        ],
+        "correct_option_id": 1,
+        "explanation": "InfluxDB is a popular time-series database designed for metrics and observability data."
+    },
+    {
+        "question": "What is the purpose of a histogram metric in Prometheus?",
+        "options": [
+            "To measure a single numerical value",
+            "To track the count of occurrences over time",
+            "To group observations into configurable buckets",
+            "To store logs for distributed tracing"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Histograms group observations into configurable buckets and are often used to measure latency distributions."
+    },
+    {
+        "question": "Which feature does Fluentd provide in observability pipelines?",
+        "options": [
+            "Time-series data storage",
+            "Log aggregation and routing",
+            "Distributed tracing",
+            "Anomaly detection"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Fluentd is used for log aggregation and routing to various storage and analysis systems."
+    },
+    {
+        "question": "What does the term 'head-based sampling' mean in distributed tracing?",
+        "options": [
+            "Sampling based on the first span in a trace",
+            "Sampling all spans before storage",
+            "Sampling a percentage of traces based on endpoint",
+            "Sampling based on historical data trends"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Head-based sampling decides whether to sample a trace based on the first span in the request."
+    },
+    {
+        "question": "What is the primary purpose of a Service Level Objective (SLO)?",
+        "options": [
+            "To define acceptable service performance thresholds",
+            "To log service failures",
+            "To monitor third-party integrations",
+            "To prioritize user support tickets"
+        ],
+        "correct_option_id": 0,
+        "explanation": "SLOs define the acceptable performance thresholds for services, such as uptime or latency."
+    },
+    {
+        "question": "Which type of visualization is most suitable for tracking real-time changes in a metric?",
+        "options": [
+            "Pie chart",
+            "Time-series line chart",
+            "Bar graph",
+            "Scatter plot"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Time-series line charts are ideal for visualizing real-time changes in metrics over time."
+    },
+    {
+        "question": "Which Kubernetes tool provides detailed insights into application logs and cluster events?",
+        "options": [
+            "kubectl logs",
+            "Lens",
+            "Fluent Bit",
+            "Elasticsearch"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Fluent Bit is commonly used to collect, process, and forward logs from Kubernetes clusters."
+    },
+    {
+        "question": "What is the role of synthetic monitoring in observability?",
+        "options": [
+            "To monitor actual user interactions",
+            "To simulate user interactions and test system performance",
+            "To identify and fix security vulnerabilities",
+            "To manage cloud resources"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Synthetic monitoring simulates user interactions to test and measure system performance proactively."
+    },
+    {
+        "question": "What is the primary purpose of an Error Budget in SRE?",
+        "options": [
+            "To allocate funds for infrastructure improvements",
+            "To determine acceptable levels of unreliability in a service",
+            "To measure the total number of incidents in a given period",
+            "To prioritize security fixes"
+        ],
+        "correct_option_id": 1,
+        "explanation": "An Error Budget defines the acceptable level of unreliability in a service, balancing reliability and innovation."
+    },
+    {
+        "question": "Which of the following is NOT a typical responsibility of an SRE team?",
+        "options": [
+            "Defining Service Level Objectives (SLOs)",
+            "Developing automation tools",
+            "Performing manual system administration tasks regularly",
+            "Reducing toil"
+        ],
+        "correct_option_id": 2,
+        "explanation": "SRE aims to reduce manual, repetitive work (toil) through automation, not rely on manual system administration."
+    },
+    {
+        "question": "What is the difference between a Service Level Indicator (SLI) and a Service Level Objective (SLO)?",
+        "options": [
+            "SLI is a target, while SLO is an actual measurement",
+            "SLI is a measurable metric, while SLO defines the target for the SLI",
+            "SLI measures latency, while SLO measures uptime",
+            "SLI is used for alerts, while SLO is used for dashboards"
+        ],
+        "correct_option_id": 1,
+        "explanation": "SLIs are measurable metrics, while SLOs define acceptable targets for those metrics."
+    },
+    {
+        "question": "Which open-source tool is commonly used for managing Service Level Objectives (SLOs)?",
+        "options": [
+            "Prometheus",
+            "Thanos",
+            "Nobl9",
+            "Grafana"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Nobl9 is a popular tool for managing and tracking SLOs."
+    },
+    {
+        "question": "What does the term 'toil' refer to in SRE practices?",
+        "options": [
+            "Critical system errors",
+            "Manual, repetitive, and automatable work",
+            "High-priority alerts",
+            "Unplanned outages"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Toil is defined as manual, repetitive, and automatable work that does not add enduring value to the system."
+    },
+    {
+        "question": "What is the significance of the 'golden signals' in monitoring?",
+        "options": [
+            "They are used to configure network routing",
+            "They provide metrics that indicate system health",
+            "They define deployment best practices",
+            "They are used to test backup systems"
+        ],
+        "correct_option_id": 1,
+        "explanation": "The golden signals (latency, traffic, errors, and saturation) are key metrics for understanding system health."
+    },
+    {
+        "question": "What is the main goal of using chaos engineering in SRE?",
+        "options": [
+            "To create unpredictable system failures",
+            "To build resilience by intentionally injecting failures into the system",
+            "To replace manual tests with automation",
+            "To increase deployment speed"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Chaos engineering involves intentionally injecting failures to test and improve system resilience."
+    },
+    {
+        "question": "Which of the following is a key principle of blameless postmortems?",
+        "options": [
+            "Identifying the individual responsible for the failure",
+            "Focusing on system improvements and root causes",
+            "Punishing repeated offenders",
+            "Ensuring all errors are documented without review"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Blameless postmortems focus on identifying system improvements and root causes, avoiding blame on individuals."
+    },
+    {
+        "question": "In the context of SRE, what is the purpose of a runbook?",
+        "options": [
+            "To define company-wide policies",
+            "To provide step-by-step procedures for handling operational tasks",
+            "To schedule software deployments",
+            "To train new hires on company culture"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Runbooks are step-by-step guides for operational tasks and incident response."
+    },
+    {
+        "question": "What is the recommended ratio of development work to operational work for SREs?",
+        "options": [
+            "50% development, 50% operations",
+            "70% development, 30% operations",
+            "80% development, 20% operations",
+            "30% development, 70% operations"
+        ],
+        "correct_option_id": 2,
+        "explanation": "SREs are recommended to spend around 80% of their time on development work and 20% on operational tasks."
+    },
+    {
+        "question": "Which metric best measures a service's availability?",
+        "options": [
+            "Latency",
+            "Uptime percentage",
+            "Error rate",
+            "Throughput"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Uptime percentage is the most common metric for measuring service availability."
+    },
+    {
+        "question": "What is the purpose of a Service Level Agreement (SLA)?",
+        "options": [
+            "To monitor resource utilization",
+            "To set specific, enforceable guarantees for a service",
+            "To define deployment strategies",
+            "To identify team responsibilities"
+        ],
+        "correct_option_id": 1,
+        "explanation": "SLAs define enforceable guarantees for a service, including uptime and performance expectations."
+    },
+    {
+        "question": "Which of the following techniques is used to reduce alert fatigue?",
+        "options": [
+            "Increasing monitoring thresholds",
+            "Group similar alerts into actionable incidents",
+            "Alerting on all system metrics",
+            "Disabling alerts temporarily"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Grouping similar alerts into actionable incidents helps reduce alert fatigue and improves response focus."
+    },
+    {
+        "question": "What is the purpose of a service dependency map?",
+        "options": [
+            "To prioritize application features",
+            "To visualize relationships between services and dependencies",
+            "To analyze network traffic patterns",
+            "To schedule maintenance windows"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Service dependency maps visualize how services interact and depend on each other."
+    },
+    {
+        "question": "Which of the following is a key practice in preventing cascading failures?",
+        "options": [
+            "Implementing circuit breakers",
+            "Increasing service quotas",
+            "Reducing monitoring intervals",
+            "Disabling retries for failed requests"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Circuit breakers help prevent cascading failures by stopping requests to failing systems."
+    },
+    {
+        "question": "What is the role of synthetic monitoring in SRE?",
+        "options": [
+            "To test the performance of actual user traffic",
+            "To simulate user interactions and monitor system health",
+            "To log system configurations",
+            "To manage alerting thresholds"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Synthetic monitoring simulates user interactions to proactively test and measure system health."
+    },
+    {
+        "question": "What is a key advantage of using Infrastructure as Code (IaC) in SRE practices?",
+        "options": [
+            "Faster manual updates",
+            "Easier rollback of system changes",
+            "Reduced need for automation",
+            "Improved physical security"
+        ],
+        "correct_option_id": 1,
+        "explanation": "IaC allows easier rollback of system changes by enabling version control for infrastructure configurations."
+    },
+    {
+        "question": "What is the purpose of canary deployments?",
+        "options": [
+            "To reduce the time required for full-scale deployments",
+            "To test a new version of software with a small subset of users",
+            "To automate rollback processes",
+            "To perform security testing on new releases"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Canary deployments test new software versions with a small subset of users before full-scale deployment."
+    },
+    {
+        "question": "Which SRE principle emphasizes building systems that automatically recover from failures?",
+        "options": [
+            "Automation",
+            "Resilience engineering",
+            "Chaos engineering",
+            "Monitoring"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Resilience engineering focuses on building systems that recover automatically from failures."
+    },
+    {
+        "question": "What is the primary purpose of a playbook in SRE?",
+        "options": [
+            "To define monitoring tools",
+            "To provide guidelines for responding to specific incidents",
+            "To configure deployment pipelines",
+            "To document service level agreements"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Playbooks contain specific steps and guidelines for responding to incidents."
     }
 ]
