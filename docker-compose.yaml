@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+  tgb:
+    image: aprescornic/telegram_quizz:1.1.0
+    restart: always
+    environment:
+      CHANNEL_ID: "-100xxxxxxx"
+      THREAD_ID: "3330"
+      MCQ_URL: "https://raw.githubusercontent.com/devops-md/quiz-bot/refs/heads/main/questions.json"
+      PUBLISH_TIME: "8:55"
+      BOT_TOKEN: "xxxxxxxxxx"
+      TZ: "Europe/Chisinau"
+      DAILY_QUIZES: 3
+      DEBUG_MODE: true
