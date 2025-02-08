@@ -2783,17 +2783,6 @@
         "explanation": "SameSite cookies restrict the ability of browsers to send cookies with cross-site requests, effectively preventing CSRF attacks."
     },
     {
-        "question": "Which of the following protocols is used to provide secure communication for email transmissions?",
-        "options": [
-            "IMAPS",
-            "SMTP",
-            "POP3",
-            "FTPS"
-        ],
-        "correct_option_id": 0,
-        "explanation": "IMAPS (IMAP Secure) is used to secure email communication by encrypting messages transmitted over the Internet."
-    },
-    {
         "question": "What is the key difference between 'symmetric' and 'asymmetric' encryption?",
         "options": [
             "Symmetric encryption uses a single key for both encryption and decryption, while asymmetric encryption uses a public and a private key.",
