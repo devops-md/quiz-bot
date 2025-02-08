@@ -1,4 +1,6 @@
-import asyncio, os, random, requests, logging
+import logging
+import requests
+import asyncio, os, random
 from telegram import Bot, Poll
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
@@ -30,8 +32,10 @@ async def fetch_and_send_json():
         random.shuffle(quiz["options"])
         quiz["correct_option_id"] = quiz["options"].index(correct_response)
 
+        # quiz = f"✨ Daily Update:\n\n{quiz}"
+
         # Send the JSON data to the channel
-        # await bot.send_message( 
+        # await bot.send_message(
         #             chat_id=CHANNEL_ID,
         #             message_thread_id=THREAD_ID, text=quiz)
         await bot.send_poll(
@@ -44,7 +48,7 @@ async def fetch_and_send_json():
                     explanation=quiz["explanation"],
                     is_anonymous=True
                 )
-        logger.info("Quiz sent successfully to the channel.")
+        logger.info("JSON sent successfully to the channel.")
 
     except requests.exceptions.RequestException as e:
         logger.error(f"Error fetching JSON: {e}")
@@ -55,7 +59,6 @@ async def main():
     """Main entry point of the bot."""
     # Set up the scheduler
     scheduler = AsyncIOScheduler()
-
     if DEBUG_MODE:
       # Add a job to the scheduler each minute
       scheduler.add_job(fetch_and_send_json, "interval", minutes=1)
@@ -69,7 +72,8 @@ async def main():
     )
 
     scheduler.start()
-    logger.info("Bot started. It will fetch and send Quiz daily.")
+
+    logger.info("Bot started. It will fetch and send JSON daily.")
 
     # Keep the script running
     try:
