@@ -1078,17 +1078,6 @@
         "explanation": "`Egress` defines rules for controlling outbound traffic from pods in a Kubernetes cluster."
     },
     {
-        "question": "Which of the following CNI plugins supports BGP for network routing in Kubernetes?",
-        "options": [
-            "Flannel",
-            "Calico",
-            "Weave Net",
-            "Cilium"
-        ],
-        "correct_option_id": 1,
-        "explanation": "Calico supports BGP (Border Gateway Protocol) for advanced network routing in Kubernetes."
-    },
-    {
         "question": "What does the `kubectl port-forward` command do?",
         "options": [
             "Creates a NodePort service",
@@ -3331,5 +3320,1204 @@
         ],
         "correct_option_id": 1,
         "explanation": "Playbooks contain specific steps and guidelines for responding to incidents."
+    },
+    {
+        "question": "Which of the following is NOT a core principle of Infrastructure as Code (IaC)?",
+        "options": [
+            "Immutability",
+            "Idempotency",
+            "Documentation as Code",
+            "Manual Configuration"
+        ],
+        "correct_option_id": 3,
+        "explanation": "Manual configuration is the opposite of IaC, which aims to automate infrastructure management."
+    },
+    {
+        "question": "What is the primary benefit of using a container orchestration tool like Kubernetes?",
+        "options": [
+            "Simplified local development",
+            "Automated deployment, scaling, and management of containerized applications",
+            "Reduced reliance on operating systems",
+            "Improved network security"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Kubernetes excels at managing containerized applications across a cluster, automating many operational tasks."
+    },
+    {
+        "question": "What is the purpose of a CI/CD pipeline?",
+        "options": [
+            "To automate the process of building, testing, and deploying software",
+            "To manage infrastructure as code",
+            "To monitor application performance",
+            "To secure network communication"
+        ],
+        "correct_option_id": 0,
+        "explanation": "CI/CD pipelines automate the software development lifecycle, from code changes to production releases."
+    },
+    {
+        "question": "Which tool is commonly used for configuration management and automation?",
+        "options": [
+            "Prometheus",
+            "Grafana",
+            "Ansible",
+            "Docker"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Ansible is a popular tool for automating configuration management and IT tasks."
+    },
+    {
+        "question": "What is a 'Canary Deployment' strategy?",
+        "options": [
+            "Deploying the new version to all users at once",
+            "Deploying the new version to a small subset of users first",
+            "Rolling back to the previous version immediately",
+            "A/B testing different versions of the application"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Canary deployments minimize risk by gradually rolling out a new release to a small group of users before a full rollout."
+    },
+    {
+        "question": "What is the purpose of a service mesh like Istio or Linkerd?",
+        "options": [
+            "To manage container orchestration",
+            "To provide a dedicated network layer for microservices communication",
+            "To monitor application performance",
+            "To automate infrastructure provisioning"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Service meshes handle inter-service communication, security, and observability in a microservices architecture."
+    },
+    {
+        "question": "What is the difference between Infrastructure as Code (IaC) and Configuration Management?",
+        "options": [
+            "They are the same thing",
+            "IaC focuses on infrastructure provisioning, while Configuration Management focuses on managing the state of machines",
+            "Configuration Management focuses on infrastructure provisioning, while IaC focuses on managing the state of machines",
+            "IaC is used for cloud environments, while Configuration Management is used for on-premise environments"
+        ],
+        "correct_option_id": 1,
+        "explanation": "IaC defines and manages infrastructure components, while Configuration Management ensures that systems are in the desired state."
+    },
+    {
+        "question": "Which of the following is a common monitoring tool used in DevOps?",
+        "options": [
+            "Jenkins",
+            "Git",
+            "Prometheus",
+            "Terraform"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Prometheus is a popular open-source monitoring system and time series database."
+    },
+    {
+        "question": "What is the purpose of a load balancer?",
+        "options": [
+            "To distribute network traffic across multiple servers",
+            "To manage container orchestration",
+            "To monitor application performance",
+            "To secure network communication"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Load balancers distribute traffic to prevent overload on individual servers and improve application availability."
+    },
+    {
+        "question": "What is the concept of 'Shift-Left' testing in DevOps?",
+        "options": [
+            "Moving testing to the end of the development cycle",
+            "Integrating testing earlier in the development process",
+            "Automating all testing activities",
+            "Outsourcing all testing activities"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Shift-left testing emphasizes early and frequent testing to catch issues sooner."
+    },
+    {
+        "question": "What is GitOps?",
+        "options": [
+            "A version control system",
+            "A set of practices that uses Git as a single source of truth for declarative infrastructure and application configuration",
+            "A continuous integration tool",
+            "A monitoring tool"
+        ],
+        "correct_option_id": 1,
+        "explanation": "GitOps uses Git to manage both application deployments and infrastructure changes."
+    },
+    {
+        "question": "What is the benefit of using immutable infrastructure?",
+        "options": [
+            "Easier debugging and rollback",
+            "Reduced security risks",
+            "Simplified scaling",
+            "All of the above"
+        ],
+        "correct_option_id": 3,
+        "explanation": "Immutable infrastructure simplifies management and improves reliability by treating infrastructure components as disposable and replaceable."
+    },
+    {
+        "question": "Which of the following is NOT a common cloud provider?",
+        "options": [
+            "AWS",
+            "Azure",
+            "Google Cloud",
+            "Docker"
+        ],
+        "correct_option_id": 3,
+        "explanation": "Docker is a containerization platform, not a cloud provider."
+    },
+    {
+        "question": "What is the purpose of a 'liveness probe' in Kubernetes?",
+        "options": [
+            "To check if a container is running",
+            "To check if a container is ready to serve traffic",
+            "To scale up the number of pods",
+            "To restart a failed pod"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Liveness probes determine if a container is still healthy and running; if it fails, Kubernetes can restart the container."
+    },
+    {
+        "question": "What is the purpose of a 'readiness probe' in Kubernetes?",
+        "options": [
+            "To check if a container is running",
+            "To check if a container is ready to serve traffic",
+            "To scale up the number of pods",
+            "To restart a failed pod"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Readiness probes determine if a container is ready to accept incoming requests; if it fails, Kubernetes can stop sending traffic to the pod."
+    },
+    {
+        "question": "What is Chaos Engineering?",
+        "options": [
+            "Intentionally injecting failures into a system to identify weaknesses",
+            "A type of performance testing",
+            "A security testing methodology",
+            "A way to automate infrastructure deployments"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Chaos Engineering proactively introduces failures to build more resilient systems."
+    },
+    {
+        "question": "What is the purpose of a container registry?",
+        "options": [
+            "To store and manage container images",
+            "To orchestrate containers",
+            "To build container images",
+            "To run containerized applications"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Container registries like Docker Hub or private registries store and distribute container images."
+    },
+    {
+        "question": "What is the difference between horizontal and vertical scaling?",
+        "options": [
+            "Horizontal scaling adds more resources to a single machine, while vertical scaling adds more machines",
+            "Horizontal scaling adds more machines, while vertical scaling adds more resources to a single machine",
+            "They are the same thing",
+            "Horizontal scaling is used for databases, while vertical scaling is used for web servers"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Horizontal scaling adds more instances (machines or containers), while vertical scaling increases the resources (CPU, RAM) of a single instance."
+    },
+    {
+        "question": "What is the principle of Least Privilege in cloud security?",
+        "options": [
+            "Granting all users full access to all resources",
+            "Granting users only the permissions they need to perform their duties",
+            "Denying all users access to all resources",
+            "Regularly rotating all user credentials"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Least Privilege minimizes the impact of compromised accounts by limiting the damage a compromised user can inflict."
+    },
+    {
+        "question": "What is a common method for securing data at rest in the cloud?",
+        "options": [
+            "Data encryption",
+            "Network segmentation",
+            "Intrusion detection",
+            "Multi-factor authentication"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Encryption transforms data into an unreadable format, protecting it even if the storage is compromised."
+    },
+    {
+        "question": "What is the purpose of a Security Information and Event Management (SIEM) system in the cloud?",
+        "options": [
+            "To prevent unauthorized access to cloud resources",
+            "To collect and analyze security logs from various sources",
+            "To automatically patch vulnerabilities in cloud applications",
+            "To encrypt data in transit"
+        ],
+        "correct_option_id": 1,
+        "explanation": "SIEM systems provide a centralized view of security events and help identify potential threats."
+    },
+    {
+        "question": "What is a 'zero trust' security model?",
+        "options": [
+            "Trusting all users within the organization's network",
+            "Assuming no implicit trust and verifying every access request",
+            "Relying solely on perimeter security",
+            "Using only multi-factor authentication"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Zero trust assumes that no user or device is inherently trustworthy, even within the network."
+    },
+    {
+        "question": "What is a common attack vector that exploits vulnerabilities in cloud applications?",
+        "options": [
+            "DDoS attack",
+            "SQL injection",
+            "Phishing",
+            "All of the above"
+        ],
+        "correct_option_id": 3,
+        "explanation": "All of these are common attack vectors, and cloud applications can be susceptible to them."
+    },
+    {
+        "question": "What is the purpose of a Web Application Firewall (WAF) in the cloud?",
+        "options": [
+            "To protect web applications from common attacks like SQL injection and cross-site scripting",
+            "To encrypt data in transit",
+            "To prevent unauthorized access to cloud resources",
+            "To monitor network traffic for malicious activity"
+        ],
+        "correct_option_id": 0,
+        "explanation": "WAFs filter malicious traffic and protect web applications from various attack vectors."
+    },
+    {
+        "question": "What is a 'shared responsibility model' in cloud security?",
+        "options": [
+            "The cloud provider is responsible for all aspects of security",
+            "The customer is responsible for all aspects of security",
+            "The responsibility for security is shared between the cloud provider and the customer",
+            "There is no shared responsibility; each party is fully responsible for their own security"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Cloud providers are responsible for securing the underlying infrastructure, while customers are responsible for securing their data and applications."
+    },
+    {
+        "question": "What is the purpose of penetration testing in the cloud?",
+        "options": [
+            "To identify vulnerabilities in cloud environments",
+            "To ensure compliance with security regulations",
+            "To monitor network traffic for malicious activity",
+            "To encrypt data at rest"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Penetration testing simulates real-world attacks to find weaknesses in the cloud environment."
+    },
+    {
+        "question": "What is a common method for managing secrets in the cloud?",
+        "options": [
+            "Storing secrets in plain text",
+            "Using a dedicated secrets management service",
+            "Hardcoding secrets in application code",
+            "Storing secrets in environment variables"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Secrets management services provide secure storage and retrieval of sensitive data like API keys and passwords."
+    },
+    {
+        "question": "What is the benefit of using Infrastructure as Code (IaC) for cloud security?",
+        "options": [
+            "Improved security posture through automated and consistent deployments",
+            "Reduced need for security audits",
+            "Elimination of all security vulnerabilities",
+            "Increased reliance on manual configuration"
+        ],
+        "correct_option_id": 0,
+        "explanation": "IaC allows for security best practices to be codified and consistently applied, reducing human error and improving security."
+    },
+    {
+        "question": "What is the purpose of cloud security posture management (CSPM)?",
+        "options": [
+            "To continuously assess and improve the security posture of cloud environments",
+            "To prevent all cyberattacks",
+            "To manage user access to cloud resources",
+            "To encrypt data in transit"
+        ],
+        "correct_option_id": 0,
+        "explanation": "CSPM tools help organizations identify misconfigurations and vulnerabilities in their cloud deployments."
+    },
+    {
+        "question": "What is a common cloud security certification?",
+        "options": [
+            "CISSP",
+            "CCSP",
+            "CEH",
+            "All of the above"
+        ],
+        "correct_option_id": 1,
+        "explanation": "CCSP (Certified Cloud Security Professional) is a widely recognized certification for cloud security professionals."
+    },
+    {
+        "question": "What is the purpose of data loss prevention (DLP) in the cloud?",
+        "options": [
+            "To prevent sensitive data from leaving the organization's control",
+            "To encrypt data at rest",
+            "To prevent unauthorized access to cloud resources",
+            "To monitor network traffic for malicious activity"
+        ],
+        "correct_option_id": 0,
+        "explanation": "DLP solutions identify and prevent the exfiltration of sensitive data, whether it's intentional or accidental."
+    },
+    {
+        "question": "What is a 'man-in-the-middle' (MITM) attack?",
+        "options": [
+            "An attacker intercepts communication between two parties",
+            "An attacker floods a server with traffic",
+            "An attacker gains unauthorized access to a system",
+            "An attacker exploits a vulnerability in a web application"
+        ],
+        "correct_option_id": 0,
+        "explanation": "In a MITM attack, the attacker secretly relays and potentially alters the communication between two parties."
+    },
+    {
+        "question": "What is the purpose of multi-factor authentication (MFA)?",
+        "options": [
+            "To add an extra layer of security beyond username and password",
+            "To encrypt data at rest",
+            "To prevent DDoS attacks",
+            "To monitor network traffic for malicious activity"
+        ],
+        "correct_option_id": 0,
+        "explanation": "MFA requires users to provide multiple forms of authentication, making it harder for attackers to gain access even if they have stolen a password."
+    },
+    {
+        "question": "What is a 'DDoS' attack?",
+        "options": [
+            "A distributed denial-of-service attack that floods a target with traffic",
+            "A type of malware",
+            "An attack that exploits a vulnerability in a web application",
+            "An attack that intercepts communication between two parties"
+        ],
+        "correct_option_id": 0,
+        "explanation": "DDoS attacks aim to overwhelm a target system, making it unavailable to legitimate users."
+    },
+    {
+        "question": "What is the purpose of incident response in cloud security?",
+        "options": [
+            "To prepare for, detect, and respond to security incidents",
+            "To prevent all security incidents",
+            "To encrypt data at rest",
+            "To monitor network traffic for malicious activity"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Incident response plans outline the steps to take when a security incident occurs, minimizing damage and recovery time."
+    },
+    {
+        "question": "What is the primary goal of a well-designed infrastructure?",
+        "options": [
+            "Maximizing cost",
+            "Minimizing complexity",
+            "Supporting business requirements and objectives",
+            "Using the latest technology"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Infrastructure should enable the business to achieve its goals, whether that's through performance, scalability, or security."
+    },
+    {
+        "question": "What is the difference between horizontal and vertical scaling?",
+        "options": [
+            "Horizontal scaling adds more resources to a single machine, while vertical scaling adds more machines",
+            "Horizontal scaling adds more machines, while vertical scaling adds more resources to a single machine",
+            "They are the same thing",
+            "Horizontal scaling is used for databases, while vertical scaling is used for web servers"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Horizontal scaling distributes load across multiple instances, while vertical scaling increases the resources of a single instance."
+    },
+    {
+        "question": "What is a 'failover' mechanism in infrastructure design?",
+        "options": [
+            "A process of intentionally causing system failures",
+            "A backup system that automatically takes over when the primary system fails",
+            "A method for load balancing traffic",
+            "A security measure to prevent unauthorized access"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Failover ensures high availability by switching to a redundant system in case of a failure."
+    },
+    {
+        "question": "What is the purpose of a load balancer?",
+        "options": [
+            "To distribute network traffic across multiple servers",
+            "To manage container orchestration",
+            "To monitor application performance",
+            "To secure network communication"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Load balancers distribute traffic to prevent overload and improve application availability."
+    },
+    {
+        "question": "What is the concept of 'Infrastructure as Code' (IaC)?",
+        "options": [
+            "Managing infrastructure in a declarative way using code",
+            "Manually configuring servers and network devices",
+            "Using a graphical interface to manage infrastructure",
+            "Outsourcing infrastructure management to a third party"
+        ],
+        "correct_option_id": 0,
+        "explanation": "IaC automates infrastructure provisioning and management, improving consistency and reducing errors."
+    },
+    {
+        "question": "What is a 'microservices' architecture?",
+        "options": [
+            "A monolithic application architecture",
+            "An architecture where applications are built as a collection of small, independent services",
+            "A serverless computing architecture",
+            "A client-server architecture"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Microservices promote modularity, scalability, and independent deployments."
+    },
+    {
+        "question": "What is the role of a Content Delivery Network (CDN)?",
+        "options": [
+            "To store and deliver static content to users around the world",
+            "To manage databases",
+            "To secure network communication",
+            "To monitor application performance"
+        ],
+        "correct_option_id": 0,
+        "explanation": "CDNs improve website performance by caching content closer to users."
+    },
+    {
+        "question": "What is the purpose of a 'reverse proxy'?",
+        "options": [
+            "To protect web servers from malicious traffic and improve performance",
+            "To forward traffic to different servers based on content",
+            "To cache static content",
+            "All of the above"
+        ],
+        "correct_option_id": 3,
+        "explanation": "Reverse proxies offer various benefits, including security, load balancing, and caching."
+    },
+    {
+        "question": "What is a 'message queue' in infrastructure design?",
+        "options": [
+            "A component that facilitates asynchronous communication between services",
+            "A database management system",
+            "A load balancing mechanism",
+            "A monitoring tool"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Message queues decouple services and enable asynchronous communication, improving scalability and resilience."
+    },
+    {
+        "question": "What is the importance of monitoring in infrastructure management?",
+        "options": [
+            "To proactively identify and resolve issues",
+            "To gather data for capacity planning",
+            "To ensure application performance",
+            "All of the above"
+        ],
+        "correct_option_id": 3,
+        "explanation": "Monitoring is essential for maintaining a healthy and performant infrastructure."
+    },
+    {
+        "question": "What is 'disaster recovery' planning in infrastructure design?",
+        "options": [
+            "Planning for how to restore systems and data in case of a major outage",
+            "Preventing all possible disasters",
+            "Minimizing infrastructure costs",
+            "Implementing security measures"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Disaster recovery plans outline the steps to take to restore operations after a disruptive event."
+    },
+    {
+        "question": "What is the concept of 'high availability' in infrastructure?",
+        "options": [
+            "Ensuring that systems are available with minimal downtime",
+            "Maximizing infrastructure costs",
+            "Using the latest technology",
+            "Implementing complex configurations"
+        ],
+        "correct_option_id": 0,
+        "explanation": "High availability aims to minimize service disruptions and ensure business continuity."
+    },
+    {
+        "question": "What is the difference between 'stateful' and 'stateless' applications?",
+        "options": [
+            "Stateful applications store data locally, while stateless applications do not",
+            "Stateless applications store data locally, while stateful applications do not",
+            "They are the same thing",
+            "Stateful applications are easier to scale than stateless applications"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Stateless applications are easier to scale horizontally as they don't rely on local data."
+    },
+    {
+        "question": "What is the role of a 'firewall' in network infrastructure?",
+        "options": [
+            "To control network traffic based on predefined rules",
+            "To distribute network traffic across multiple servers",
+            "To monitor network performance",
+            "To encrypt network communication"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Firewalls protect networks by filtering traffic and blocking unauthorized access."
+    },
+    {
+        "question": "What is a 'virtual private cloud' (VPC)?",
+        "options": [
+            "A logically isolated section of a public cloud",
+            "A private cloud hosted on-premises",
+            "A type of serverless computing",
+            "A network monitoring tool"
+        ],
+        "correct_option_id": 0,
+        "explanation": "VPCs allow organizations to create their own isolated network within a public cloud."
+    },
+    {
+        "question": "What is the purpose of a 'domain name system' (DNS)?",
+        "options": [
+            "To translate domain names into IP addresses",
+            "To manage network traffic",
+            "To secure network communication",
+            "To store website content"
+        ],
+        "correct_option_id": 0,
+        "explanation": "DNS makes it easier for users to access websites by using human-readable domain names."
+    },
+    {
+        "question": "What is the concept of 'caching' in infrastructure design?",
+        "options": [
+            "Storing frequently accessed data in a faster storage location",
+            "Encrypting data at rest",
+            "Monitoring network traffic",
+            "Managing user authentication"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Caching improves performance by reducing the need to retrieve data from slower storage."
+    },
+    {
+        "question": "What is the importance of capacity planning in infrastructure design?",
+        "options": [
+            "Ensuring that the infrastructure can handle future growth and demand",
+            "Minimizing infrastructure costs",
+            "Implementing security measures",
+            "Monitoring application performance"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Capacity planning helps organizations avoid performance bottlenecks and ensure scalability."
+    },
+    {
+        "question": "Which DevOps practice ensures that infrastructure changes are managed through code?",
+        "options": [
+            "Continuous Integration",
+            "Immutable Infrastructure",
+            "Infrastructure as Code",
+            "GitOps"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Infrastructure as Code (IaC) enables the management of infrastructure through code, ensuring consistency and repeatability."
+    },
+    {
+        "question": "In Kubernetes, what is the purpose of a `mutating admission webhook`?",
+        "options": [
+            "To modify incoming resource requests before they are persisted",
+            "To deny requests that do not meet security policies",
+            "To schedule pods on specific nodes",
+            "To monitor cluster health"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Mutating admission webhooks allow modification of requests before they are persisted in etcd, enabling dynamic policy enforcement."
+    },
+    {
+        "question": "What is the primary benefit of using Canary Deployments?",
+        "options": [
+            "Zero downtime during deployments",
+            "Testing new features with a small subset of users before full rollout",
+            "Ensuring feature parity between old and new versions",
+            "Completely eliminating the need for rollback strategies"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Canary deployments release new features to a small user group first, allowing for validation before full rollout."
+    },
+    {
+        "question": "Which of the following tools is NOT typically used for observability in DevOps?",
+        "options": [
+            "Prometheus",
+            "ELK Stack",
+            "Terraform",
+            "Jaeger"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Terraform is an Infrastructure as Code tool, while Prometheus, ELK Stack, and Jaeger are used for monitoring and tracing."
+    },
+    {
+        "question": "How does Kubernetes handle stateful applications differently from stateless ones?",
+        "options": [
+            "By using StatefulSets instead of Deployments",
+            "By automatically persisting all pod logs",
+            "By storing application data inside pod containers",
+            "By assigning a unique label to each stateful pod"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Kubernetes uses StatefulSets for managing stateful applications, ensuring stable network identities and persistent storage."
+    },
+    {
+        "question": "Which of the following best describes GitOps?",
+        "options": [
+            "Using Git repositories to manage Kubernetes configurations and deployments",
+            "A technique for merging code changes automatically",
+            "An alternative to Infrastructure as Code (IaC)",
+            "A process to manage Git branches more effectively"
+        ],
+        "correct_option_id": 0,
+        "explanation": "GitOps uses Git as a single source of truth for declarative infrastructure and application deployment management."
+    },
+    {
+        "question": "Which Kubernetes component is responsible for maintaining the desired state of the cluster?",
+        "options": [
+            "kube-apiserver",
+            "kube-scheduler",
+            "kube-controller-manager",
+            "etcd"
+        ],
+        "correct_option_id": 2,
+        "explanation": "The `kube-controller-manager` ensures that the cluster’s state matches the desired state by reconciling objects."
+    },
+    {
+        "question": "What is the main role of an Ingress Controller in Kubernetes?",
+        "options": [
+            "To manage external access to services using HTTP and HTTPS routes",
+            "To expose services externally via LoadBalancer",
+            "To handle internal service-to-service communication",
+            "To schedule pods on the cluster"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Ingress Controllers manage external access, defining rules for routing traffic based on hostnames and paths."
+    },
+    {
+        "question": "Which CI/CD pattern reduces build times by caching dependencies and artifacts?",
+        "options": [
+            "Artifact Promotion",
+            "Parallel Execution",
+            "Layered Builds",
+            "Distributed Pipelines"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Layered Builds cache dependencies and artifacts, speeding up CI/CD pipeline execution."
+    },
+    {
+        "question": "What is the purpose of a Kubernetes `PodDisruptionBudget`?",
+        "options": [
+            "To prevent a certain number of pods from being evicted at the same time",
+            "To allocate additional resources to pods",
+            "To limit the number of pods in a namespace",
+            "To ensure all pods run on separate nodes"
+        ],
+        "correct_option_id": 0,
+        "explanation": "A `PodDisruptionBudget` ensures that a minimum number of pods remain available during voluntary disruptions."
+    },
+    {
+        "question": "What is the key advantage of a Service Mesh in microservices architecture?",
+        "options": [
+            "It eliminates the need for API gateways",
+            "It abstracts service-to-service communication and provides security, observability, and traffic control",
+            "It improves Kubernetes scheduling efficiency",
+            "It speeds up database queries"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Service Meshes like Istio and Linkerd provide observability, security, and traffic control between microservices."
+    },
+    {
+        "question": "Which of the following is a Git branching strategy commonly used in DevOps?",
+        "options": [
+            "Waterfall branching",
+            "Feature branching",
+            "Pipeline branching",
+            "Static branching"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Feature branching allows developers to work on isolated features before merging into the main branch."
+    },
+    {
+        "question": "What is the function of a Helm Chart in Kubernetes?",
+        "options": [
+            "To define and manage Kubernetes objects declaratively",
+            "To automatically scale Kubernetes deployments",
+            "To create and manage CI/CD pipelines",
+            "To analyze network traffic between pods"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Helm Charts package Kubernetes manifests to define and manage complex deployments declaratively."
+    },
+    {
+        "question": "Which of the following is NOT a primary component of a Kubernetes cluster?",
+        "options": [
+            "etcd",
+            "kubelet",
+            "nginx",
+            "kube-scheduler"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Nginx is commonly used as an Ingress Controller but is not a core component of Kubernetes."
+    },
+    {
+        "question": "Which DevOps security practice ensures code integrity in CI/CD pipelines?",
+        "options": [
+            "Role-Based Access Control (RBAC)",
+            "Immutable Infrastructure",
+            "Software Supply Chain Security",
+            "Serverless Security"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Software Supply Chain Security includes integrity checks, dependency scanning, and signing releases to prevent malicious code injection."
+    },
+    {
+        "question": "What does Kubernetes Horizontal Pod Autoscaler (HPA) use to scale workloads?",
+        "options": [
+            "CPU and memory usage metrics",
+            "Number of nodes in the cluster",
+            "Total number of services",
+            "Disk usage metrics"
+        ],
+        "correct_option_id": 0,
+        "explanation": "HPA dynamically scales pods based on CPU/memory usage or custom metrics."
+    },
+    {
+        "question": "What is the primary purpose of a Sidecar container pattern?",
+        "options": [
+            "To share compute resources between multiple pods",
+            "To offload responsibilities like logging, monitoring, or security from the main application",
+            "To replace Kubernetes Init Containers",
+            "To provide a backup of application data"
+        ],
+        "correct_option_id": 1,
+        "explanation": "Sidecar containers extend application functionality, handling tasks like logging, monitoring, and security."
+    },
+    {
+        "question": "What is the purpose of Terraform’s `state` file?",
+        "options": [
+            "To track infrastructure resources and dependencies",
+            "To store Kubernetes configurations",
+            "To define Terraform provider configurations",
+            "To manage Terraform plugin updates"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Terraform's state file (`terraform.tfstate`) records managed resources and dependencies."
+    },
+    {
+        "question": "What are the three core pillars of observability?",
+        "options": [
+            "Metrics, Logs, and Traces",
+            "Alerts, Dashboards, and Reports",
+            "Monitoring, Logging, and Alerting",
+            "Performance, Security, and Availability"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Metrics, logs, and traces provide a comprehensive view of a system's behavior."
+    },
+    {
+        "question": "What is the primary purpose of distributed tracing?",
+        "options": [
+            "To track requests as they travel through a distributed system",
+            "To aggregate logs from multiple sources",
+            "To monitor system performance metrics",
+            "To visualize infrastructure dependencies"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Distributed tracing helps pinpoint performance bottlenecks and errors in complex microservice architectures."
+    },
+    {
+        "question": "What is the difference between metrics and logs?",
+        "options": [
+            "Metrics are structured and aggregated, while logs are unstructured or semi-structured event records",
+            "Logs are structured and aggregated, while metrics are unstructured or semi-structured event records",
+            "Metrics are used for alerting, while logs are used for debugging",
+            "They are the same thing"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Metrics provide a high-level overview of system behavior, while logs offer detailed insights into individual events."
+    },
+    {
+        "question": "What is the purpose of a log aggregation system?",
+        "options": [
+            "To collect and centralize logs from multiple sources",
+            "To visualize metrics and traces",
+            "To generate alerts based on predefined rules",
+            "To automate infrastructure deployments"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Log aggregation simplifies log management and analysis, making it easier to identify issues and trends."
+    },
+    {
+        "question": "What is a common tool for visualizing metrics and creating dashboards?",
+        "options": [
+            "Grafana",
+            "Jaeger",
+            "Fluentd",
+            "Prometheus"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Grafana is a popular open-source tool for creating dashboards and visualizing data from various sources."
+    },
+    {
+        "question": "What is the purpose of alerting in observability?",
+        "options": [
+            "To notify engineers of potential issues or anomalies",
+            "To collect and store logs",
+            "To trace requests through a distributed system",
+            "To visualize system performance"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Alerts enable proactive problem detection and faster incident response."
+    },
+    {
+        "question": "What is the concept of 'correlation' in observability?",
+        "options": [
+            "Linking data from different sources to gain a holistic view of a problem",
+            "Aggregating metrics from multiple services",
+            "Tracing requests through a distributed system",
+            "Generating alerts based on predefined rules"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Correlation helps connect the dots between metrics, logs, and traces to understand the root cause of issues."
+    },
+    {
+        "question": "What is the role of a service mesh in observability?",
+        "options": [
+            "To provide detailed insights into inter-service communication",
+            "To manage container orchestration",
+            "To secure network communication",
+            "To automate infrastructure deployments"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Service meshes like Istio and Linkerd provide rich telemetry data for observing microservice interactions."
+    },
+    {
+        "question": "What is the difference between 'black-box' and 'white-box' monitoring?",
+        "options": [
+            "Black-box monitoring focuses on external behavior, while white-box monitoring looks at internal metrics",
+            "White-box monitoring focuses on external behavior, while black-box monitoring looks at internal metrics",
+            "They are the same thing",
+            "Black-box monitoring is more expensive than white-box monitoring"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Black-box monitoring treats the system as a black box, while white-box monitoring uses internal metrics and logs."
+    },
+    {
+        "question": "What is OpenTelemetry?",
+        "options": [
+            "A collection of tools, APIs, and SDKs to instrument, generate, collect, and export telemetry data",
+            "A log aggregation system",
+            "A metric visualization tool",
+            "A distributed tracing system"
+        ],
+        "correct_option_id": 0,
+        "explanation": "OpenTelemetry provides a vendor-neutral way to instrument applications for observability."
+    },
+    {
+        "question": "What is the purpose of sampling in distributed tracing?",
+        "options": [
+            "To reduce the volume of trace data collected",
+            "To improve the accuracy of trace data",
+            "To increase the cost of tracing",
+            "To simplify trace analysis"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Sampling allows for efficient tracing in high-traffic systems by only capturing a subset of requests."
+    },
+    {
+        "question": "What is the concept of 'context propagation' in distributed tracing?",
+        "options": [
+            "Passing trace information between services to correlate spans",
+            "Aggregating trace data from multiple sources",
+            "Visualizing trace data in a dashboard",
+            "Generating alerts based on trace data"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Context propagation ensures that traces are correctly linked together as requests travel through different services."
+    },
+    {
+        "question": "What is a 'span' in distributed tracing?",
+        "options": [
+            "A single operation within a trace, representing a unit of work",
+            "A collection of related spans",
+            "A metric associated with a trace",
+            "A log message related to a trace"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Spans represent individual operations, like a function call or a database query, within a larger trace."
+    },
+    {
+        "question": "What is a 'trace' in distributed tracing?",
+        "options": [
+            "A complete end-to-end request through a distributed system",
+            "A single operation within a request",
+            "A metric associated with a request",
+            "A log message related to a request"
+        ],
+        "correct_option_id": 0,
+        "explanation": "A trace represents the entire path of a request as it travels through different services."
+    },
+    {
+        "question": "What is the role of a tracing backend?",
+        "options": [
+            "To store and analyze trace data",
+            "To instrument applications for tracing",
+            "To visualize trace data",
+            "To generate trace data"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Tracing backends like Jaeger and Zipkin store and provide query capabilities for trace data."
+    },
+    {
+        "question": "What is the purpose of 'service level indicators' (SLIs) in observability?",
+        "options": [
+            "To measure and track key metrics that reflect the user experience",
+            "To aggregate logs from multiple services",
+            "To trace requests through a distributed system",
+            "To generate alerts based on predefined rules"
+        ],
+        "correct_option_id": 0,
+        "explanation": "SLIs quantify the reliability and performance of a service from the user's perspective."
+    },
+    {
+        "question": "What is the relationship between SLIs, SLOs, and SLAs?",
+        "options": [
+            "SLIs measure performance, SLOs define targets, and SLAs are agreements with customers",
+            "SLOs measure performance, SLIs define targets, and SLAs are agreements with customers",
+            "SLAs measure performance, SLOs define targets, and SLIs are agreements with customers",
+            "They are all the same thing"
+        ],
+        "correct_option_id": 0,
+        "explanation": "SLIs are what you measure, SLOs are the targets you set, and SLAs are the agreements you make with customers."
+    },
+    {
+        "question": "What is the benefit of using structured logging?",
+        "options": [
+            "Easier parsing and analysis of logs",
+            "Reduced log storage costs",
+            "Improved log readability for humans",
+            "Faster log retrieval"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Structured logs make it easier to search, filter, and analyze log data programmatically."
+    },
+    {
+        "question": "Which command allows you to remount a filesystem with different mount options without unmounting it?",
+        "options": [
+            "mount -o remount",
+            "umount -r",
+            "fsck --remount",
+            "sync --update-mount"
+        ],
+        "correct_option_id": 0,
+        "explanation": "The `mount -o remount` command allows changing mount options without unmounting the filesystem."
+    },
+    {
+        "question": "Which systemd unit type is responsible for mounting filesystems?",
+        "options": [
+            "service",
+            "target",
+            "mount",
+            "socket"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Systemd uses `mount` units to manage and configure mounted filesystems."
+    },
+    {
+        "question": "What does the `nice` command do in Linux?",
+        "options": [
+            "Adjusts the CPU scheduling priority of a process",
+            "Limits the memory usage of a process",
+            "Changes the ownership of a file",
+            "Terminates a process gracefully"
+        ],
+        "correct_option_id": 0,
+        "explanation": "`nice` sets the priority of a process, with lower values giving higher priority and higher values making it less CPU-intensive."
+    },
+    {
+        "question": "Which of the following is used to securely erase files from a Linux system?",
+        "options": [
+            "rm -rf",
+            "shred",
+            "unlink",
+            "wipefs"
+        ],
+        "correct_option_id": 1,
+        "explanation": "The `shred` command overwrites files multiple times to make recovery difficult."
+    },
+    {
+        "question": "Which Linux command is used to track real-time disk I/O usage per process?",
+        "options": [
+            "iostat",
+            "iotop",
+            "vmstat",
+            "sar"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`iotop` shows real-time disk usage by processes, similar to how `top` monitors CPU usage."
+    },
+    {
+        "question": "What is the purpose of `/etc/ld.so.conf` in Linux?",
+        "options": [
+            "Configures shared library paths for dynamic linking",
+            "Manages user authentication policies",
+            "Defines cron job schedules",
+            "Stores kernel module parameters"
+        ],
+        "correct_option_id": 0,
+        "explanation": "`/etc/ld.so.conf` specifies additional directories for shared libraries used by dynamic executables."
+    },
+    {
+        "question": "Which command is used to analyze logs in a binary format in systemd?",
+        "options": [
+            "cat /var/log/syslog",
+            "journalctl",
+            "tail -f /var/log/messages",
+            "dmesg -H"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`journalctl` reads logs from systemd’s binary-based journal, unlike traditional plaintext logs."
+    },
+    {
+        "question": "Which kernel parameter enables swap file encryption?",
+        "options": [
+            "swap.enable=1",
+            "crypt.swap=1",
+            "encrypt.swap=1",
+            "swap=on"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`crypt.swap=1` enables swap file encryption for enhanced security in Linux systems."
+    },
+    {
+        "question": "Which of the following commands can be used to change the priority of a running process?",
+        "options": [
+            "renice",
+            "chpriority",
+            "setnice",
+            "schedctl"
+        ],
+        "correct_option_id": 0,
+        "explanation": "`renice` adjusts the priority of an already running process in Linux."
+    },
+    {
+        "question": "What does the `sysctl -w net.ipv4.tcp_syncookies=1` command do?",
+        "options": [
+            "Enables SYN cookie protection against SYN flood attacks",
+            "Increases TCP handshake timeout",
+            "Disables TCP keepalive packets",
+            "Prevents DNS resolution failures"
+        ],
+        "correct_option_id": 0,
+        "explanation": "Setting `net.ipv4.tcp_syncookies=1` enables SYN cookies, a security feature that mitigates SYN flood attacks."
+    },
+    {
+        "question": "Which tool is used to analyze system calls made by a running process?",
+        "options": [
+            "strace",
+            "lsof",
+            "gdb",
+            "perf"
+        ],
+        "correct_option_id": 0,
+        "explanation": "`strace` traces system calls and signals for a given process."
+    },
+    {
+        "question": "Which Linux command can be used to measure the I/O performance of a disk?",
+        "options": [
+            "dd",
+            "fio",
+            "hdparm",
+            "iostat"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`fio` is a powerful benchmarking tool used to test and measure disk performance."
+    },
+    {
+        "question": "What is the purpose of `setcap` in Linux?",
+        "options": [
+            "To modify extended file attributes",
+            "To grant specific capabilities to binaries without requiring full root privileges",
+            "To create special-purpose system users",
+            "To modify network interfaces"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`setcap` assigns specific privileges to executables without giving them full root access."
+    },
+    {
+        "question": "What is the function of the `firewalld` service in Linux?",
+        "options": [
+            "To manage packet forwarding rules",
+            "To provide a dynamic firewall management tool with zones and rules",
+            "To configure TCP/IP networking settings",
+            "To control SSH access policies"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`firewalld` is a dynamic firewall manager used in Linux to manage security policies."
+    },
+    {
+        "question": "Which command can be used to display detailed information about a specific package in an RPM-based system?",
+        "options": [
+            "dpkg -s",
+            "yum info",
+            "rpm -qi",
+            "zypper info"
+        ],
+        "correct_option_id": 2,
+        "explanation": "`rpm -qi` provides detailed information about an installed RPM package."
+    },
+    {
+        "question": "What is the main purpose of `tmpfs` in Linux?",
+        "options": [
+            "To store temporary files in RAM for faster access",
+            "To create persistent log files",
+            "To extend disk storage using swap space",
+            "To allocate extra cache for SSD performance"
+        ],
+        "correct_option_id": 0,
+        "explanation": "`tmpfs` creates a temporary filesystem stored in RAM, allowing fast access to frequently used temporary files."
+    },
+    {
+        "question": "Which Linux kernel subsystem is responsible for handling namespaces and cgroups?",
+        "options": [
+            "SELinux",
+            "Systemd",
+            "LXC",
+            "Container runtime"
+        ],
+        "correct_option_id": 2,
+        "explanation": "Linux Containers (LXC) use namespaces and cgroups for process isolation and resource allocation."
+    },
+    {
+        "question": "Which file contains system-wide shell configuration settings for all users?",
+        "options": [
+            "/etc/bash.bashrc",
+            "/etc/profile",
+            "~/.bashrc",
+            "~/.profile"
+        ],
+        "correct_option_id": 1,
+        "explanation": "`/etc/profile` applies system-wide environment settings to all users at login."
+    },
+    {
+        "question": "Which command is used to enable or disable a system service permanently in systemd?",
+        "options": [
+            "systemctl start",
+            "systemctl stop",
+            "systemctl enable",
+            "systemctl restart"
+        ],
+        "correct_option_id": 2,
+        "explanation": "`systemctl enable <service>` ensures the service starts automatically on boot."
+    },
+    {
+        "question": "What is the primary function of AppArmor in Linux?",
+        "options": [
+            "To restrict application capabilities using mandatory access control policies",
+            "To monitor system logs for security threats",
+            "To encrypt filesystem data",
+            "To configure network firewalls"
+        ],
+        "correct_option_id": 0,
+        "explanation": "AppArmor enforces security policies that restrict what applications can access and modify."
     }
 ]
