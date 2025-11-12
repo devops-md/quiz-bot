@@ -1,8 +1,15 @@
-FROM python:alpine
+FROM python:3.13-alpine
 
 WORKDIR /app/
-RUN python -m pip install python-telegram-bot apscheduler requests
 
-ADD quiz_bot.py .
+# Copy requirements file first for better Docker layer caching
+COPY requirements.txt .
 
-CMD [ "python", "/app/quiz_bot.py" ]
+# Install dependencies from requirements file
+RUN python -m pip install --no-cache-dir --upgrade pip && \
+    python -m pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY src/ ./src/
+
+CMD [ "python", "-m", "src.main" ]

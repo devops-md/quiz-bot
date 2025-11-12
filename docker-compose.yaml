@@ -1,15 +1,32 @@
 services:
   tgb:
-    image: aprescornic/telegram_quizz:1.3.0
+    image: aprescornic/telegram_quizz:1.3.1
     restart: always
     build:
       context: .
+      platforms:
+        - linux/amd64
+        # - linux/arm64
     environment:
+      # Telegram Bot Configuration
+      BOT_TOKEN: ${BOT_TOKEN}
       CHANNEL_ID: ${CHANNEL_ID}
       THREAD_ID: ${THREAD_ID}
-      MCQ_URL: "https://raw.githubusercontent.com/devops-md/quiz-bot/refs/heads/main/questions.json"
+      
+      # Quiz Source Configuration (json or quizapi)
+      QUIZ_SOURCE: json
+      
+      # JSON Provider Configuration (used when QUIZ_SOURCE=json)
+      MCQ_URL: https://raw.githubusercontent.com/devops-md/quiz-bot/refs/heads/main/questions.json
+      
+      # QuizAPI Provider Configuration (used when QUIZ_SOURCE=quizapi) endpoint .../ai for AI generated questions (max 5/day)
+      QUIZAPI_KEY: ${QUIZAPI_KEY:-}
+      QUIZAPI_ENDPOINT: https://quizapi.io/api/v1/questions
+      DIFFICULTY: hard
+      
+      # Scheduling Configuration
       PUBLISH_TIME: "8:50"
-      BOT_TOKEN: ${BOT_TOKEN}
-      TZ: "Europe/Chisinau"
-      DAILY_QUIZES: 1
       DEBUG_MODE: "False"
+      
+      # System Configuration
+      TZ: "Europe/Chisinau"
