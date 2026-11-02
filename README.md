@@ -44,21 +44,33 @@ Automated Telegram Quiz Bot that dynamically generates and publishes daily techn
 
 ---
 
-## Taxonomy of Domains
+## Taxonomy & Difficulty Levels
 
-Questions are rotated dynamically across 12 domains specified in `questions_domains.json`:
-1. **Containers & Orchestration** (Docker, Kubernetes Control Plane, CNI, CSI, RBAC, Helm, Service Mesh)
-2. **CI/CD & GitOps** (ArgoCD, Flux, GitLab CI, GitHub Actions, Jenkins, Release Strategies)
-3. **Infrastructure as Code** (Terraform, OpenTofu, Terragrunt, Ansible, Pulumi)
-4. **Cloud Platforms** (AWS, GCP, Azure, FinOps, Cloud Networking)
-5. **Observability & SRE** (Prometheus, PromQL, Grafana, OpenTelemetry, Loki, SLOs)
-6. **Linux & System Engineering** (Kernel, cgroups, Systemd, Bash automation, Performance diagnostics)
-7. **Networking & Protocols** (TCP/IP, DNS, TLS/mTLS, Nginx, Envoy, WireGuard)
-8. **DevSecOps** (Trivy, Vault, Supply Chain / SBOM, Sigstore, OPA / Kyverno)
-9. **AI for DevOps & MLOps** (Local LLMs, Model Context Protocol, RAG Ops, GPU scheduling)
-10. **Databases & Storage for DevOps** (PostgreSQL HA, Redis, MinIO/Ceph, Velero)
-11. **History of IT** (UNIX origins, early pioneers, ARPANET, famous historical outages)
-12. **IT Memes & Culture** (DNS jokes, Friday deploys, editor wars, joke RFCs, on-call humor)
+### Difficulty Levels
+Questions are rotated across four calibrated difficulty levels:
+- **`beginner`**: Primitives, core definitions, and basic commands.
+- **`intermediate`**: Day-to-day production operations, configuration flags, and debugging.
+- **`advanced`**: Deep internals, kernel mechanisms, race conditions, and performance tuning.
+- **`architect`**: System design trade-offs, high-availability topologies, DR/RTO/RPO strategies, FinOps unit economics, and platform scaling.
+
+### Domains
+Questions are rotated dynamically across 16 domains specified in `questions_domains.json`:
+1. **Containers & Orchestration** (Docker, Kubernetes Control Plane, CNI, CSI, RBAC, Autoscaling/Karpenter, Gateway API, vCluster, Helm, Istio/Cilium)
+2. **CI/CD & GitOps** (ArgoCD, Flux v2, GitLab CI, GitHub Actions, Jenkins, Progressive Rollouts, Harbor, Pipeline Security, Tekton)
+3. **Infrastructure as Code** (Terraform, OpenTofu, Terragrunt, Ansible, Pulumi, Crossplane, Atlantis, Packer, Drift & DR)
+4. **Cloud Platforms** (AWS, GCP, Azure, Serverless, Cloud Identity & Federation, Hybrid Connectivity, Cloud Governance)
+5. **Platform Engineering** (Internal Developer Platforms, Backstage, Port, Golden Paths, Platform APIs, DevEx, DevContainers)
+6. **Observability & SRE** (Prometheus, PromQL, Grafana, OpenTelemetry, Loki, Continuous Profiling, SLOs, Incident Response)
+7. **Linux & System Engineering** (Kernel, cgroups v2, Systemd, Bash, Performance diagnostics, strace/perf, eBPF, Memory/OOM, SELinux)
+8. **Networking & Protocols** (TCP/IP, DNS, TLS/mTLS, Nginx, Envoy, HTTP/2 & HTTP/3, BGP Routing, WireGuard, CDNs, DDoS/WAF)
+9. **DevSecOps** (Trivy, Vault, SBOM, Sigstore, OPA/Kyverno, Distroless Hardening, Falco Runtime Security, CSPM, Zero Trust)
+10. **FinOps & Cloud Economics** (Cost Allocation & Tagging, Savings Plans/CUDs, Spot Orchestration, Kubecost/OpenCost, Unit Economics)
+11. **Chaos & Reliability Engineering** (Chaos Mesh, Blast Radius, GameDays, Circuit Breakers, Bulkheads, Jitter, Active-Active DR)
+12. **Distributed Systems Architecture** (Consensus Raft/Paxos, CAP/PACELC, Sagas, Kafka/RabbitMQ/NATS, Idempotency, Caching, Gateways)
+13. **AI for DevOps & MLOps** (Local LLMs, Model Context Protocol, GPU Scheduling, Vector DBs, RAG Ops, Kubeflow, AI SRE Agents)
+14. **Databases & Storage for DevOps** (PostgreSQL HA Patroni, pgBackRest, Redis/Valkey, Kafka, MinIO/Ceph, Zero-Downtime Migrations)
+15. **History of IT** (UNIX & BSD origins, early computing pioneers, ARPANET, famous historical outages, virtualization history, VCS evolution)
+16. **IT Memes & Culture** (DNS jokes, Friday deploys, editor wars, joke RFCs, on-call humor, programming roast culture, meetup lore)
 
 ---
 

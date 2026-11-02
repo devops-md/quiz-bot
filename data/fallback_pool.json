@@ -1,0 +1,157 @@
+[
+  {
+    "domain": "containers_and_orchestration",
+    "subdomain": "Kubernetes Core Architecture & Control Plane",
+    "difficulty": "intermediate",
+    "question": "Which Kubernetes component manages node health and initiates pod eviction when a node becomes NotReady?",
+    "options": [
+      "Node Lifecycle Controller",
+      "Kube-proxy",
+      "EndpointSlice Controller",
+      "Kubelet Garbage Collector"
+    ],
+    "correct_option_id": 0,
+    "explanation": "The Node Lifecycle Controller in kube-controller-manager monitors node heartbeats and evicts pods when timeouts expire."
+  },
+  {
+    "domain": "cicd_and_gitops",
+    "subdomain": "GitOps (ArgoCD, Flux)",
+    "difficulty": "intermediate",
+    "question": "In GitOps with ArgoCD, what happens when an engineer modifies a resource directly via kubectl without changing Git?",
+    "options": [
+      "ArgoCD marks the app as OutOfSync",
+      "ArgoCD automatically commits to Git",
+      "The Kubernetes API server crashes",
+      "The cluster rolls back to initial state"
+    ],
+    "correct_option_id": 0,
+    "explanation": "ArgoCD detects drift between live cluster state and Git target state, marking the application OutOfSync."
+  },
+  {
+    "domain": "infrastructure_as_code",
+    "subdomain": "Terraform & OpenTofu (Syntax, State Management, Modules)",
+    "difficulty": "intermediate",
+    "question": "Which Terraform command refreshes the local state file against real-world infrastructure without altering infrastructure?",
+    "options": [
+      "terraform refresh",
+      "terraform apply -auto-approve",
+      "terraform destroy",
+      "terraform fmt"
+    ],
+    "correct_option_id": 0,
+    "explanation": "terraform refresh reads remote infrastructure and updates state file metadata to reflect current reality."
+  },
+  {
+    "domain": "observability_and_sre",
+    "subdomain": "Prometheus & Alertmanager (PromQL, Metric Types, Rules)",
+    "difficulty": "intermediate",
+    "question": "In PromQL, which function should be used to calculate the per-second rate of increase of a monotonically increasing Counter metric?",
+    "options": [
+      "rate()",
+      "increase()",
+      "delta()",
+      "histogram_quantile()"
+    ],
+    "correct_option_id": 0,
+    "explanation": "rate() computes the per-second average rate of increase of a range vector and handles counter resets automatically."
+  },
+  {
+    "domain": "linux_and_system_engineering",
+    "subdomain": "Linux Kernel, Namespaces & cgroups",
+    "difficulty": "intermediate",
+    "question": "Which Linux kernel feature is primarily responsible for enforcing CPU, memory, and I/O resource limits on containers?",
+    "options": [
+      "Control Groups (cgroups)",
+      "Network Namespaces",
+      "Chroot jail",
+      "SELinux contexts"
+    ],
+    "correct_option_id": 0,
+    "explanation": "cgroups (control groups) constrain, allocate, and monitor system resources like CPU, memory, and block I/O."
+  },
+  {
+    "domain": "history_of_it",
+    "subdomain": "Origins of UNIX, BSD & Linux Distributions",
+    "difficulty": "beginner",
+    "question": "In which Bell Labs project did Ken Thompson and Dennis Ritchie create the original UNIX operating system in 1969?",
+    "options": [
+      "Multics project",
+      "ENIAC initiative",
+      "ARPANET core team",
+      "GNU project"
+    ],
+    "correct_option_id": 0,
+    "explanation": "UNIX was conceived at AT&T Bell Labs following Bell Labs' withdrawal from the Multics project."
+  },
+  {
+    "domain": "it_memes_and_culture",
+    "subdomain": "Classic Tech Memes (It works on my machine, It's always DNS)",
+    "difficulty": "beginner",
+    "question": "According to the classic sysadmin haiku, what is the root cause when you are sure it cannot be the network?",
+    "options": [
+      "It's always DNS",
+      "It's bad RAM",
+      "A rogue kernel panic",
+      "Unplugged power cord"
+    ],
+    "correct_option_id": 0,
+    "explanation": "'It's not DNS. There's no way it's DNS. It was DNS.' - Classic sysadmin haiku by SSJack."
+  },
+  {
+    "domain": "platform_engineering",
+    "subdomain": "Internal Developer Platforms (IDP concepts, architectural foundations)",
+    "difficulty": "architect",
+    "question": "In modern Platform Engineering, what is the core architectural purpose of a 'Golden Path' (or Paved Road)?",
+    "options": [
+      "Opinionated, supported self-service path reducing cognitive load",
+      "Mandatory manual approval gate before deploying to production",
+      "Network routing path dedicated exclusively to staging traffic",
+      "Centralized dashboard for monitoring database performance"
+    ],
+    "correct_option_id": 0,
+    "explanation": "Golden Paths provide supported, self-service templates and workflows that reduce cognitive load while maintaining standards."
+  },
+  {
+    "domain": "finops_and_cloud_economics",
+    "subdomain": "Commitment-Based Discounts (Reserved Instances, Savings Plans, CUDs)",
+    "difficulty": "architect",
+    "question": "When architecting a FinOps commitment strategy, which baseline capacity should generally be covered by Compute Savings Plans / CUDs?",
+    "options": [
+      "Stable, predictable baseline usage across multiple regions/families",
+      "Unpredictable seasonal spike workloads and batch jobs",
+      "Short-lived spot workloads in staging environments",
+      "Ephemeral container builds in continuous integration"
+    ],
+    "correct_option_id": 0,
+    "explanation": "Compute Savings Plans offer flexibility across instance families and regions for predictable steady-state baseline consumption."
+  },
+  {
+    "domain": "chaos_and_reliability_engineering",
+    "subdomain": "Resilience Patterns (Circuit Breakers, Bulkheads, Retries with Jitter, Dead Letter Queues)",
+    "difficulty": "architect",
+    "question": "Why is exponential backoff with full jitter preferred over plain exponential backoff during distributed service retries?",
+    "options": [
+      "Prevents thundering herd problems by de-synchronizing retry waves",
+      "Reduces total CPU instructions required to execute retry loops",
+      "Ensures retry packets bypass network firewalls and rate limiters",
+      "Guarantees exactly-once message delivery without idempotency"
+    ],
+    "correct_option_id": 0,
+    "explanation": "Adding randomized jitter de-synchronizes concurrent client retries, preventing cyclical traffic spikes against overloaded services."
+  },
+  {
+    "domain": "distributed_systems_architecture",
+    "subdomain": "Distributed Consensus Protocols (Raft, Paxos, ZAB in etcd and ZooKeeper)",
+    "difficulty": "architect",
+    "question": "In the Raft consensus algorithm used by etcd, what quorum of votes is strictly required to elect a new leader in an N-node cluster?",
+    "options": [
+      "Strict majority: (N / 2) + 1 nodes",
+      "Unanimous agreement: all N nodes",
+      "Simple plurality: any candidate with at least 2 votes",
+      "Two-thirds supermajority: (2N / 3) nodes"
+    ],
+    "correct_option_id": 0,
+    "explanation": "Raft guarantees safety by requiring an absolute majority (floor(N/2) + 1) of cluster nodes to agree on leader election and log commits."
+  }
+]
+

@@ -16,9 +16,9 @@ class Domain(BaseModel):
 class DomainCatalog(BaseModel):
     """Full taxonomy loaded from questions_domains.json."""
 
-    version: str = "2.0.0"
+    version: str = "2.1.0"
     description: str = ""
-    difficulty_levels: List[str] = ["beginner", "intermediate", "advanced"]
+    difficulty_levels: List[str] = ["beginner", "intermediate", "advanced", "architect"]
     domains: Dict[str, Domain]
 
 
