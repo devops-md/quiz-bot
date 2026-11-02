@@ -8,6 +8,9 @@ on:
 env:
   DOCKER_IMAGE: aprescornic/telegram_quizz
 
+permissions:
+  contents: write
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -18,6 +21,9 @@ jobs:
         with:
           fetch-depth: 0
       
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       
@@ -32,7 +38,7 @@ jobs:
         run: |
           # Get the latest tag from Docker Hub
           LATEST_TAG=$(curl -s "https://hub.docker.com/v2/repositories/${{ env.DOCKER_IMAGE }}/tags/?page_size=100" | \
-            jq -r '.results[].name' | \
+            jq -r '.results[].name // empty' | \
             grep -E '^[0-9]+\.[0-9]+\.[0-9]+$' | \
             sort -V | \
             tail -n 1)
@@ -51,7 +57,7 @@ jobs:
           echo "Building version: $NEW_VERSION"
       
       - name: Build and push Docker image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           platforms: linux/amd64,linux/arm64
@@ -64,22 +70,22 @@ jobs:
       
       - name: Create Git tag
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag -a "v${{ steps.get_version.outputs.new_version }}" -m "Release v${{ steps.get_version.outputs.new_version }}"
           git push origin "v${{ steps.get_version.outputs.new_version }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Create Release
-        uses: actions/create-release@v1
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ steps.get_version.outputs.new_version }}
-          release_name: Release v${{ steps.get_version.outputs.new_version }}
+          name: Release v${{ steps.get_version.outputs.new_version }}
           body: |
-            Docker image published:
+            Docker image published to Docker Hub:
             - `${{ env.DOCKER_IMAGE }}:${{ steps.get_version.outputs.new_version }}`
             - `${{ env.DOCKER_IMAGE }}:latest`
           draft: false

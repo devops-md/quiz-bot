@@ -1,0 +1,146 @@
+{
+  "version": "2.0.0",
+  "description": "DevOps Moldova Quiz Domains and Subdomains taxonomy for dynamic Ollama LLM question generation",
+  "difficulty_levels": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "domains": {
+    "containers_and_orchestration": {
+      "title": "Containers & Orchestration",
+      "description": "Container runtime, container images, orchestration with Kubernetes, Helm, and Service Meshes",
+      "subdomains": [
+        "Docker & Container Runtimes (containerd, CRI-O)",
+        "Kubernetes Core Architecture & Control Plane",
+        "Kubernetes Networking (CNI, CoreDNS, Ingress, Services)",
+        "Kubernetes Storage (PV, PVC, StorageClasses, CSI)",
+        "Kubernetes Security (RBAC, NetworkPolicies, Pod Security Standards)",
+        "Helm & Packaging",
+        "Service Mesh (Istio, Linkerd, Cilium)"
+      ]
+    },
+    "cicd_and_gitops": {
+      "title": "CI/CD & GitOps",
+      "description": "Automated pipelines, GitOps continuous delivery, release strategies, and artifact management",
+      "subdomains": [
+        "GitOps (ArgoCD, Flux)",
+        "GitLab CI & Runners",
+        "GitHub Actions & Workflows",
+        "Jenkins & Pipelines as Code",
+        "Artifact Repositories (Harbor, Nexus, Artifactory)",
+        "Deployment Strategies (Canary, Blue-Green, Rolling, Feature Flags)"
+      ]
+    },
+    "infrastructure_as_code": {
+      "title": "Infrastructure as Code & Configuration Management",
+      "description": "Declarative infrastructure provisioning, configuration automation, and drift detection",
+      "subdomains": [
+        "Terraform & OpenTofu (Syntax, State Management, Modules)",
+        "Terragrunt & DRY Patterns",
+        "Ansible (Playbooks, Roles, Inventory)",
+        "Pulumi & Programmatic IaC",
+        "Config Drift & IaC Testing (Terratest, TFLint)"
+      ]
+    },
+    "cloud_platforms": {
+      "title": "Cloud Architecture & Platforms",
+      "description": "Public cloud primitives, architecture, networking, IAM, and FinOps across major cloud providers",
+      "subdomains": [
+        "AWS (IAM, VPC, EKS, ECS, S3, RDS)",
+        "Google Cloud Platform (GKE, Cloud Run, VPC, Cloud IAM)",
+        "Azure (AKS, Virtual Networks, Managed Identities)",
+        "Cloud Networking & Hybrid Connectivity",
+        "FinOps & Cloud Cost Optimization"
+      ]
+    },
+    "observability_and_sre": {
+      "title": "Observability & SRE",
+      "description": "Metrics, logs, traces, alerting, incident response, and reliability engineering practices",
+      "subdomains": [
+        "Prometheus & Alertmanager (PromQL, Metric Types, Rules)",
+        "Grafana (Dashboards, Alerting, Datasources)",
+        "OpenTelemetry (Traces, Metrics, OTel Collector)",
+        "Centralized Logging (Loki, Fluent Bit, Elasticsearch/OpenSearch)",
+        "SRE Principles (SLI, SLO, SLA, Error Budgets)",
+        "Incident Management, Postmortems & On-Call Engineering"
+      ]
+    },
+    "linux_and_system_engineering": {
+      "title": "Linux & System Engineering",
+      "description": "Linux internals, process management, shell scripting, performance diagnostics, and system utilities",
+      "subdomains": [
+        "Linux Kernel, Namespaces & cgroups",
+        "Systemd Services, Units & Timers",
+        "Bash & Shell Scripting Automation",
+        "File Systems & Storage (LVM, ZFS, NFS)",
+        "Linux Performance Diagnostics (top, vmstat, iostat, strace, perf)"
+      ]
+    },
+    "networking": {
+      "title": "Networking & Protocols",
+      "description": "Core protocols, network debugging, reverse proxies, and secure communication",
+      "subdomains": [
+        "TCP/IP, UDP & OSI Model Primitives",
+        "DNS Configuration & Troubleshooting",
+        "TLS/mTLS, SSL Certificates & PKI",
+        "Reverse Proxies & Load Balancers (Nginx, Traefik, HAProxy, Envoy)",
+        "VPNs & Mesh Networks (WireGuard, Tailscale)"
+      ]
+    },
+    "devsecops": {
+      "title": "DevSecOps & Cloud Security",
+      "description": "Security scanning, secrets management, supply chain integrity, and policy enforcement",
+      "subdomains": [
+        "Vulnerability Scanning (Trivy, Grype, Snyk)",
+        "Secrets Management (HashiCorp Vault, SOPS, Infisical, AWS Secrets Manager)",
+        "Software Supply Chain Security (SBOM, Sigstore/Cosign, SLSA)",
+        "Policy as Code (OPA / Gatekeeper, Kyverno)",
+        "Cloud Security Posture (CSPM, CIS Benchmarks, Least Privilege)"
+      ]
+    },
+    "ai_for_devops_and_mlops": {
+      "title": "AI in DevOps & MLOps",
+      "description": "Local LLM self-hosting, Model Context Protocol (MCP), GPU scheduling, and AI agent workflows",
+      "subdomains": [
+        "Local LLM Hosting & Inference (Ollama, vLLM, llama.cpp)",
+        "Model Context Protocol (MCP) & Agent Tooling",
+        "RAG Architecture & Vector Stores in Production",
+        "GPU Scheduling & Workloads in Kubernetes (NVIDIA GPU Operator)",
+        "AI Agents for Infrastructure & Incident Troubleshooting"
+      ]
+    },
+    "databases_and_storage": {
+      "title": "Databases & Storage for DevOps",
+      "description": "High availability, replication, caching, backups, and distributed storage systems",
+      "subdomains": [
+        "PostgreSQL High Availability & Replication (Patroni, PgBouncer)",
+        "In-Memory Caching & Stores (Redis, Valkey)",
+        "Object Storage & S3-compatible Systems (MinIO, Ceph)",
+        "Backup, Snapshotting & Disaster Recovery (Velero, pgBackRest)"
+      ]
+    },
+    "history_of_it": {
+      "title": "History of IT & Computing",
+      "description": "Milestones in computing, operating systems evolution, legendary outages, key pioneers, and retro tech",
+      "subdomains": [
+        "Origins of UNIX, BSD & Linux Distributions",
+        "Pioneers & Milestones in Computing (Turing, Ritchie, Hopper, Torvalds)",
+        "Evolution of ARPANET, Early RFCs & the World Wide Web",
+        "Legendary Outages, Early Hacks & Historic Bugs (Morris Worm, Y2K)",
+        "Retro Hardware & Architecture Milestones (Mainframes, PDP, x86 evolution)"
+      ]
+    },
+    "it_memes_and_culture": {
+      "title": "IT Memes, Culture & DevOps Folklore",
+      "description": "Classic sysadmin folklore, legendary developer memes, Friday deploy tropes, and tech community humor",
+      "subdomains": [
+        "Classic Tech Memes (It works on my machine, It's always DNS)",
+        "Deployment & Production Lore (Never deploy on Friday, git push --force)",
+        "Editor & Syntax Wars (Vim vs Emacs, Tabs vs Spaces, semicolon drama)",
+        "Joke & April Fools RFCs (RFC 1149 IPoAC, HTTP 418 I'm a teapot)",
+        "SRE & On-Call Survival Humor (PagerDuty 3 AM alerts, coffee-to-code)"
+      ]
+    }
+  }
+}

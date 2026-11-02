@@ -1,32 +1,54 @@
 services:
-  tgb:
-    image: aprescornic/telegram_quizz:1.4.0
-    restart: always
+  ollama:
+    image: ollama/ollama:latest
+    container_name: quiz_ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  quiz-bot:
     build:
       context: .
-      platforms:
-        - linux/amd64
-        # - linux/arm64
+    image: aprescornic/telegram_quizz:latest
+    container_name: quiz_bot
+    restart: unless-stopped
+    depends_on:
+      ollama:
+        condition: service_healthy
     environment:
-      # Telegram Bot Configuration
+      # Telegram Bot Credentials
       BOT_TOKEN: ${BOT_TOKEN}
       CHANNEL_ID: ${CHANNEL_ID}
-      THREAD_ID: ${THREAD_ID}
-      
-      # Quiz Source Configuration (json or quizapi)
-      QUIZ_SOURCE: json
-      
-      # JSON Provider Configuration (used when QUIZ_SOURCE=json)
-      MCQ_URL: https://raw.githubusercontent.com/devops-md/quiz-bot/refs/heads/main/questions.json
-      
-      # QuizAPI Provider Configuration (used when QUIZ_SOURCE=quizapi) endpoint .../ai for AI generated questions (max 5/day)
-      QUIZAPI_KEY: ${QUIZAPI_KEY:-}
-      QUIZAPI_ENDPOINT: https://quizapi.io/api/v1/questions
-      DIFFICULTY: hard
-      
-      # Scheduling Configuration
-      PUBLISH_TIME: "8:50"
-      DEBUG_MODE: "False"
-      
-      # System Configuration
-      TZ: "Europe/Chisinau"
+      THREAD_ID: ${THREAD_ID:-}
+
+      # Scheduling
+      PUBLISH_TIME: ${PUBLISH_TIME:-08:50}
+      TZ: ${TZ:-Europe/Chisinau}
+      DEBUG_MODE: ${DEBUG_MODE:-false}
+      DEBUG_INTERVAL_MINUTES: ${DEBUG_INTERVAL_MINUTES:-2}
+
+      # Local Ollama Configuration
+      OLLAMA_BASE_URL: http://192.168.100.56:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2:3b}
+      OLLAMA_TIMEOUT: ${OLLAMA_TIMEOUT:-60.0}
+      OLLAMA_TEMPERATURE: ${OLLAMA_TEMPERATURE:-0.7}
+      OLLAMA_MAX_RETRIES: ${OLLAMA_MAX_RETRIES:-3}
+
+      # Persistence Paths
+      DOMAINS_FILE_PATH: questions_domains.json
+      HISTORY_PATH: data/history.json
+      FALLBACK_POOL_PATH: data/fallback_pool.json
+    volumes:
+      - quiz_data:/app/data
+
+volumes:
+  ollama_data:
+  quiz_data:
